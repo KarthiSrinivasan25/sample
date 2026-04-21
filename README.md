@@ -28,3 +28,11 @@ Carrot 🥕
 Tomato 🍅
 Spinach / Keerai 🌿
 Cabbage 🥬
+
+
+
+
+பாலக் கீரை
+முருங்கைக் கீரை
+வெந்தயக் கீரை
+தண்டு கீரை

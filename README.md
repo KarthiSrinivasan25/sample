@@ -49,3 +49,10 @@ https://www.amazon.in/MX-S-017F-Connector-Terminal-mxS-017F-Pack/dp/B0CXPKX54X/r
 
 
 https://www.amazon.in/Terminal-Connector-Solderless-Converter-Connectors/dp/B09JB7TX2P/ref=sr_1_67?crid=2NKJGZHWAK90R&dib=eyJ2IjoiMSJ9.xxzoKyPRankT7x0H0Od7xGyrAebVDD_swAOd-FBJ2kH0BpC5-jPHGPSqS5EDfD5MZvpAhMFBm112DDUBjZzB7TO2TtADmIqAcN3CeRzIoZbMM8-YAAWo9CUlQL4KdPcwN4nYVli4IJ2l_YgxTZshGFFIX3Wq93pjoiEueD5mdYI.AIeLeqt4P6z0d3Wov-cKPJLyRfDoXGsdhO7VjCQQ4-Y&dib_tag=se&keywords=RCA+Female+Connectors+Solderless+Adapter%2C+RCA+Female+seat+for+AV+Screw+Terminal+Audio%2FVideo+Speaker&nsdOptOutParam=true&qid=1776845072&sprefix=rca+female+connectors+solderless+adapter%2C+rca+female+seat+for+av+screw+terminal+audio%2Fvideo+speaker%2Caps%2C560&sr=8-67&xpid=XA2blGyAOqOrS
+
+
+
+RCA Female Connectors Solderless Adapter, RCA Female seat for AV Screw Terminal Audio/Video Speaker
+
+
+RCA PLUG

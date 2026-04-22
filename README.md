@@ -31,6 +31,12 @@ Cabbage 🥬
 
 
 
+https://www.flipkart.com/oncro-tv-out-cable-male-connector-socket-rca-plug-converter-av-female-screw-terminal/p/itm43264fd7c9d8a?pid=ACCGFFKYT9ZQUWUQ&lid=LSTACCGFFKYT9ZQUWUQRUHVKT&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D&pageUID=1776840026257
+
+
+https://robomart.com/product/rca-female-connectors-solderless-adapter-rca-female-seat-for-av-screw-terminal-audio-video-speaker-pack-of-2/?srsltid=AfmBOoqh6cn5J2drpG1wToZj7DsszPDWTWJrYrdQTAEIVsBcNKMv5hkI
+
+
 
 பாலக் கீரை
 முருங்கைக் கீரை

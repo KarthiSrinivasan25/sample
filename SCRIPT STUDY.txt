@@ -1,0 +1,233 @@
+
+let obj = {
+  name:"karthi",
+  age:26
+}
+console.log(obj)
+
+obj.degree = "CS"
+console.log(obj)
+
+delete obj.age
+console.log(obj)
+
+obj.degree = "MCA"
+console.log(obj)
+
+console.log("degree" in obj)
+console.log("age" in obj)
+console.log()
+
+for(let key in obj){
+  console.log(key + " : " + obj[key])
+}
+
+console.log(Object.keys(obj).length)
+
+
+
+function Student(name, age){
+  this.name = name,
+  this.age = age
+}
+
+const s1 = new Student("Karthikeyan", 26)
+const s2 = new Student("Swetha", 25)
+
+// for(key in s1){
+//   console.log(key + " : " + s1[key])
+// }
+
+const students = [s1, s2]
+
+students.forEach((student, index) => {
+  console.log("Student " + index)
+  for(let key in student){
+    console.log(key + " -> " + student[key])
+  }
+})
+
+
+OBJECT
+-------
+let user1 = {
+  name:"karthikeyan",
+  age:26,
+  degree:"MCA",
+  login(){
+    console.log(this.name)
+    console.log("login successfully")
+  },
+  logout(){
+    console.log("logout successfully")
+  }
+}
+
+let user2 = {
+  name:"Udhaya",
+  age:27,
+  degree:"ECE",
+  login(){
+    console.log("login successfully")
+  },
+  logout(){
+    console.log(this.name)
+    console.log("logout successfully")
+  }
+}
+
+user1.login()
+user2.logout()
+
+
+
+CLASS
+-----
+class User{
+  constructor(name, age, degree){
+    this.name = name,
+    this.age = age,
+    this.degree = degree
+  }
+   login(){
+    console.log(this.name)
+    console.log("login successfully")
+  }
+  logout(){
+    console.log(this.name)
+    console.log("logout successfully")
+  }
+}
+
+let userOne = new User("Arun",24,"CS")
+let userTwo = new User("Chandru",21,"EEE")
+
+userOne.login()
+
+
+
+INHERITANCE
+------------
+class Accounts{
+  constructor(Name, Dob, AccNo){
+    this.Name = Name,
+    this.Dob = Dob,
+    this.AccNo = AccNo
+  }
+  display(){
+    console.log("---------Account Details--------")
+  console.log(this.Name)
+  console.log(this.Dob)
+  console.log(this.AccNo)
+  }
+  
+}
+
+class Savings extends Accounts{
+  restictions(){
+    console.log("--------Savings Accounts Restictions---------")
+    console.log("Minimum Balance Maintain 500rs")
+    console.log("Per-Day Withdraw Limits 5Times")
+  }
+}
+
+class Current extends Accounts{
+  restictions(){
+    console.log("--------Current Accounts Restictions---------")
+    console.log("No Minimum Balance")
+    console.log("Unlimited Withdraw")
+  }
+}
+
+let a1 = new Savings("Karthi", "25/08/200", 123456789)
+a1.display()
+a1.restictions()
+
+let a2 = new Current("Swetha", "01/08/2001", 987654321)
+a2.display()
+a2.restictions()
+
+
+Child class la same parent class iruka data access panna athuku super class use pannanum like super(name, age)
+
+
+
+SUPER CLASS & CHAINING METHOD(use this keyword)
+-----------------------------------------------
+
+class User{
+  static noOfUers = 0;
+  constructor(name, age, degree){
+    this.name = name,
+    this.age = age,
+    this.degree = degree
+    User.noOfUers++
+  }
+   login(){
+     console.log(User.noOfUers)
+    console.log(this.name)
+    console.log("login successfully")
+  }
+  logout(){
+    console.log(this.name)
+    console.log("logout successfully")
+  }
+  
+  static displayTotalUsers(){
+    console.log("Total No of Users: " + User.noOfUers)
+  }
+}
+
+class PaidUser extends User{
+  
+  constructor(name, age, degree, dresscode){
+    super(name, age)
+    this.dresscode = dresscode
+  }
+  
+  
+  message(){
+    console.log("Sample data message")
+  }
+  
+  login(){
+    console.log(this.name)
+    console.log("login successfully paid user")
+    return this
+  }
+}
+
+let userOne = new User("Arun",24,"CS")
+let userTwo = new User("Chandru",21,"EEE")
+let user3 = new User("Mohan",23,"EEE")
+userOne.login()
+console.log(User.noOfUers)
+
+User.displayTotalUsers()
+
+let user4 = new PaidUser("Murugan", 27, "IT", "Green")
+user4.login().message() // ->> chaining method
+
+
+
+PROTOTYPE
+---------
+function User(name, age){
+  this.name = name,
+  this.age = age
+  // this.login = function(){
+  //   console.log("login successfully")
+  // }
+}
+
+User.prototype.login = function(){
+  console.log("login successfully")
+}
+  
+let user1 = new User("Vanitha", 20)
+console.log(user1)
+
+user1.login()
+
+
+

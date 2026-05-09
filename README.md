@@ -5,8 +5,6 @@
     margin-top: 20px;      
   }
 
-https://drive.google.com/file/d/1Z4XD4xxIa5jC8G7MT0ZbXo51kQ4rMUkM/view?usp=sharing
-
 
 https://www.flipkart.com/aestmo-back-cover-vivo-v40e-5g/p/itme7a3201434d17?pid=ACCH5TT7D35WGANZ&lid=LSTACCH5TT7D35WGANZSNDEYH&hl_lid=&marketplace=FLIPKART&fm=eyJ3dHAiOiJyZWNvIiwicHJwdCI6InBwIiwibWlkIjoicHJvZHVjdFJlY29tbWVuZGF0aW9uL3NpbWlsYXIifQ%3D%3D
 
@@ -58,8 +56,3 @@ RCA Female Connectors Solderless Adapter, RCA Female seat for AV Screw Terminal 
 RCA PLUG
 
 
-https://www.amazon.in/TheGiftKart-Bumper-Sliding-Kickstand-Protection/dp/B0DTKWNYTB/ref=sr_1_6?crid=22R3N806UT2U4&dib=eyJ2IjoiMSJ9.Y_EcqCuElVDbdLJC6aUafvHlcloVteQSF2hyxgAiYv_rrJnUo_Bwe6waBIeWAQt7BNXUHytEgysIvVRUobjfm9qppVPCXHRev8hxcPt0RMeay6DcekfsvU5lFDW0DYouOGhEpYtQduUoXxxnml5Ckyl0CeKDE9s0KZKaK2EWII4xuaoHwBg8fQ8_nXt3HpXf-uw_kdrWmqA43GxCm8R-tE5ni6zFElAGMGT6ND9nCdHSzJsF0aEuRC95v8mfoO4LI6fR9Sk1i9mTedP8m1rBzCMn9WwE7G76eECEqNlKfek.2E5f4rlVjckJixlCyN0lTFtfY1Kjqi7CdXDiDgW_oh4&dib_tag=se&keywords=vivo%2Bv40e%2Bhard%2Brugged%2Bback%2Bcase&qid=1777352700&refinements=p_n_g-1003506632111%3A49875001031&rnid=49874979031&s=electronics&sprefix=vivo%2Bv40e%2Bhard%2Brugged%2Bback%2Bcas%2Celectronics%2C398&sr=1-6&th=1
-
-
-
-https://www.amazon.in/TheGiftKart-Vivo-V40e-iQOO-Z9s/dp/B0DF34HJ97?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A3RU4MEDJKV1YX&utm_source=chatgpt.com&th=1

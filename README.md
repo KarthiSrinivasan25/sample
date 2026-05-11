@@ -50,3 +50,6 @@ RCA Female Connectors Solderless Adapter, RCA Female seat for AV Screw Terminal 
 RCA PLUG
 
 https://www.flipkart.com/mprow-1200-leds-5-m-yellow-steady-string-rice-lights/p/itm2a75af3d0db50?pid=RCLHGHGWK6Z9AAZC&marketplace=FLIPKART&lid=LSTRCLHGHGWK6Z9AAZCGQCTWI&q=rope+light&fm=Search&pageUID=1778486765125
+
+
+https://docs.google.com/document/d/1I2aJ5AsRVJnx0N9ph6yU4jcSrSZt-V_I/edit?usp=drivesdk&ouid=110691686748398057205&rtpof=true&sd=true

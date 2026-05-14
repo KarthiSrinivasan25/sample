@@ -53,3 +53,84 @@ https://www.flipkart.com/mprow-1200-leds-5-m-yellow-steady-string-rice-lights/p/
 
 
 https://docs.google.com/document/d/1I2aJ5AsRVJnx0N9ph6yU4jcSrSZt-V_I/edit?usp=drivesdk&ouid=110691686748398057205&rtpof=true&sd=true
+
+
+<?php
+echo "hello \n";
+
+//single line comments
+
+/*multiline
+comments */
+
+//echo vs print
+echo "karthi \n","25-08-2000 \n"; //echo fast ah irukum, value return pannathu, multiple values kudukka mudium
+
+print "Eruma"; //slow iruku, value return pannum "1", multiple valueskudukka mudiyathu one value tha kudukka mudium
+
+
+// variable
+$name = "karthi";
+echo "$name \n";
+
+$name2 = "swetha";
+echo '$name2';  // intha maari single quotes echo use panna variable tha print aagum athuoda value print aagathu 
+echo "\n";
+
+
+// data types  -> int, string, boolean intha maari normal int $a = 10; use panna mudiyathu ethula function parameter pass pandra apo tha work aagum normal ah use panna error varum
+
+// string, int, bool, float, array, object, null, resource
+
+// Integer
+$a = 5;
+echo "$a \n";
+
+//float
+$b = 10.4;
+echo "$b \n";
+
+//String -> single or double quotes use pannalam  
+$greeting = "good morning";
+echo $greeting;
+echo "\n";
+
+$greeting2 = 'good night';
+echo "$greeting2 \n";
+
+//Boolean
+$swethaIsBoy = true;  // true ah irutha 1 print pannum
+echo $swethaIsBoy;
+
+$swethaIsGirl = false;
+echo $swethaIsGirl;
+echo "\n";
+
+
+//Array
+$arr = array("swetha","01/08/2001","mca", 25);
+echo $arr[0];
+echo "\n";
+var_dump($arr);
+
+//Null
+$year = null; 
+echo $year;
+
+// null eppa varum 
+$name3; 
+var_dump($name3);
+
+$name4 = "vanitha";
+unset($name4);
+var_dump($name4);
+
+
+//Type Casting
+$num = 5;   
+$convert = (string) $num;
+var_dump($convert);
+?>
+
+
+

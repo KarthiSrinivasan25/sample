@@ -133,4 +133,26 @@ var_dump($convert);
 ?>
 
 
-
+variable
+operator
+if and if-else statements
+switch
+for
+while
+do while
+constructor
+function
+array
+foreach
+class
+object
+inheritance
+string
+map, filter, reduce
+closure
+memory allocation stack and heap
+map and set
+promise
+error handling
+async, await
+dom

@@ -133,3 +133,79 @@ var_dump($convert);
 ?>
 
 
+
+
+
+
+<?php
+//Casting
+//Type Juggling
+$a = "10";
+$b = 5;
+echo "$a + $b \n";
+
+//Manual Casting or expilcit
+$num = "10";
+$num2 = (int) $num;
+var_dump($num2);
+
+$name = "karthi";
+$name2 = (int) $name;
+var_dump($name2);
+
+$name3 = "25 karthi";
+$name4 = (int) $name3;
+var_dump($name4);
+
+//Constants -> two types la create panna mudium
+// define(), const keyword
+
+//Define(constant_name, value)
+define("greeting", "Good Morning");
+echo greeting;
+echo "\n";
+/* -> ethu one type of function constant create panna
+   -> slow ah iruku and old method
+   -> runtime la work aagum
+   -> function or conditional statements la kudutha work aagum
+*/
+if(true){
+    define("name", "eruma maadu");
+    echo name;
+    echo "\n";
+}
+
+//Const Keyword
+$swetha = "boy";
+echo "$swetha";
+/* -> fast ah work aagum
+   ->compile time la tha work aagum
+   -> latest use
+   -> function or conditional statement la work aagathu
+*/
+
+
+//Operators
+/* 8types
+Arithmetic operators
+Assignment operators
+Comparison operators
+Increment/Decrement operators
+Logical operators
+String operators
+Array operators
+Conditional operators
+*/
+
+//$x === $y  in tha Identical operator vanthu value and datatype um same ah irutha tha ture varum ellana false
+// !== ethu non identical operator ethu true aganumuna same value or same type iruka kudathu
+
+
+//Logical operator
+// and, or, xor, &&, ||, !
+
+//xor -> etho onnu true irutha pothu conditin true, rendume true ah irutha false, rendume false irutha false
+
+//or -> etho onnu true irutha condition true, rendume true irutha true, rendume false irutha false
+
+?>

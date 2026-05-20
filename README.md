@@ -209,3 +209,8 @@ Conditional operators
 //or -> etho onnu true irutha condition true, rendume true irutha true, rendume false irutha false
 
 ?>
+
+
+
+
+https://www.flipkart.com/kajaru-self-design-men-polo-neck-beige-t-shirt/p/itm1d8eb17da9c52?pid=TSHHEW4TMMFBUDJK&lid=LSTTSHHEW4TMMFBUDJKAZSPUX&marketplace=FLIPKART&q=t+shirts+office&store=clo%2Fash%2Fank&srno=s_3_81&otracker=search&otracker1=search&fm=Search&iid=en_1O0gyyFZ8XBqOjTzd_6oEXH3uohRtrWWM37RKPAt-fZoEwp7lc0vYHFseUt98U3QPQA2RQG_pXUdhoLhiteIjA%3D%3D&ppt=sp&ppn=sp&ssid=yfzj5vy28jw0obgg1779277254329&qH=26da35891bcdd556&ov_redirect=true

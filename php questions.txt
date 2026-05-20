@@ -1,0 +1,60 @@
+What is PHP?
+What are the features of PHP?
+How does PHP work?
+What is the latest version of PHP?
+Difference between echo and print?
+Difference between == and ===?
+What are variable scopes in PHP?
+What is a superglobal variable in PHP?
+What are PHP data types?
+Difference between GET and POST?
+Difference between Session and Cookie?
+What is the use of isset()?
+What is the use of empty()?
+Difference between include and require?
+Difference between include_once and require_once?
+What are constants in PHP?
+How do you define constants in PHP?
+What are arrays in PHP?
+Types of arrays in PHP?
+What is an associative array?
+What is a multidimensional array?
+What is the use of array_merge()?
+What is the use of count()?
+What is explode()?
+What is implode()?
+How do you reverse a string in PHP?
+How do you check palindrome in PHP?
+Write a factorial program in PHP.
+Write a Fibonacci series program in PHP.
+How do you remove duplicate values from an array?
+What is OOP in PHP?
+What is a class and object?
+What is a constructor?
+What is a destructor?
+What is inheritance?
+What is polymorphism?
+What is encapsulation?
+What is abstraction?
+Difference between Interface and Abstract class?
+What are traits in PHP?
+What are access modifiers in PHP?
+What is the use of static keyword?
+What is $this keyword in PHP?
+What is method overloading?
+What is method overriding?
+How do you connect PHP with MySQL?
+Difference between mysqli and PDO?
+What is SQL Injection?
+How do you prevent SQL Injection?
+What is a Prepared Statement?
+What is XSS?
+How do you hash passwords in PHP?
+How do you upload files in PHP?
+What is error handling in PHP?
+What is try-catch in PHP?
+What is JSON in PHP?
+How do you encode/decode JSON in PHP?
+What is REST API?
+What is Composer in PHP?
+What is Namespace in PHP?

@@ -214,3 +214,8 @@ Conditional operators
 
 
 https://www.flipkart.com/kajaru-self-design-men-polo-neck-beige-t-shirt/p/itm1d8eb17da9c52?pid=TSHHEW4TMMFBUDJK&lid=LSTTSHHEW4TMMFBUDJKAZSPUX&marketplace=FLIPKART&q=t+shirts+office&store=clo%2Fash%2Fank&srno=s_3_81&otracker=search&otracker1=search&fm=Search&iid=en_1O0gyyFZ8XBqOjTzd_6oEXH3uohRtrWWM37RKPAt-fZoEwp7lc0vYHFseUt98U3QPQA2RQG_pXUdhoLhiteIjA%3D%3D&ppt=sp&ppn=sp&ssid=yfzj5vy28jw0obgg1779277254329&qH=26da35891bcdd556&ov_redirect=true
+
+
+https://www.flipkart.com/knro-fab-men-solid-casual-purple-shirt/p/itmd60e6d85a26a4?pid=SHTGY8D3YGGGJXH8&marketplace=FLIPKART&ov_redirect=true
+
+https://www.flipkart.com/wonderland-raw-califoria-almonds/p/itmf2gabghfpdtcy?pid=NDFF2F32HMXQCAPZ&lid=LSTNDFF2F32HMXQCAPZ9K3RLP&marketplace=FLIPKART&q=almond&store=eat%2Fltb%2Fngb&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en__Sy_kcoJ_NJmCjhMeODmFMKUiT4v6BatNURgPA7VIY20Zq5pKEbRgQtRwnKerFLgqsPDK7JeL_lAiYzDBONbWk4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=sp&ppn=sp&ssid=obclj0pijrx5tvy81779426439124&qH=7d8ba6c8ab89c44f&ov_redirect=true&ov_redirect=true

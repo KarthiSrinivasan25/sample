@@ -219,3 +219,7 @@ https://www.flipkart.com/kajaru-self-design-men-polo-neck-beige-t-shirt/p/itm1d8
 https://www.flipkart.com/knro-fab-men-solid-casual-purple-shirt/p/itmd60e6d85a26a4?pid=SHTGY8D3YGGGJXH8&marketplace=FLIPKART&ov_redirect=true
 
 https://www.flipkart.com/wonderland-raw-califoria-almonds/p/itmf2gabghfpdtcy?pid=NDFF2F32HMXQCAPZ&lid=LSTNDFF2F32HMXQCAPZ9K3RLP&marketplace=FLIPKART&q=almond&store=eat%2Fltb%2Fngb&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en__Sy_kcoJ_NJmCjhMeODmFMKUiT4v6BatNURgPA7VIY20Zq5pKEbRgQtRwnKerFLgqsPDK7JeL_lAiYzDBONbWk4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=sp&ppn=sp&ssid=obclj0pijrx5tvy81779426439124&qH=7d8ba6c8ab89c44f&ov_redirect=true&ov_redirect=true
+
+
+
+https://www.flipkart.com/vicorp-8-5-inch-lcd-writing-board-tablet-electronic-slate-kids/p/itma1914fe73f02c?pid=ETYGU4CKBJ6YCDEB&lid=LSTETYGU4CKBJ6YCDEBAVONYF&marketplace=FLIPKART&q=slate&store=search.flipkart.com&srno=s_1_15&otracker=search&otracker1=search&fm=Search&iid=0fe875cb-a906-4212-8717-012ebf2c8d87.ETYGU4CKBJ6YCDEB.SEARCH&ppt=sp&ppn=sp&ssid=ybxddmvp12qfzv9c1779534142125&qH=312ee6b77f05b59e&ov_redirect=true&ov_redirect=true

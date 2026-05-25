@@ -1,0 +1,123 @@
+export const services = [
+  {
+    icon: "fas fa-globe",
+    title: "Custom Website Development",
+    desc: "Bespoke websites built with modern frameworks like React, Next.js, and Laravel for optimal performance and scalability.",
+  },
+  {
+    icon: "fas fa-shopping-cart",
+    title: "E-Commerce Solutions",
+    desc: "Powerful online stores with Shopify, WooCommerce, or custom carts — secure payments, inventory, and seamless UX.",
+  },
+  {
+    icon: "fas fa-mobile-alt",
+    title: "Responsive Web Design",
+    desc: "Mobile-first designs that look stunning on all devices, improving user engagement and conversion rates.",
+  },
+  {
+    icon: "fas fa-database",
+    title: "Web Application Development",
+    desc: "Custom web apps, dashboards, and SaaS platforms with robust backend architecture and real-time features.",
+  },
+  {
+    icon: "fas fa-wordpress",
+    title: "CMS Development",
+    desc: "Easy-to-manage websites with WordPress, Webflow, or custom CMS — empowering your content team.",
+  },
+  {
+    icon: "fas fa-chart-line",
+    title: "SEO & Performance Optimization",
+    desc: "Lightning-fast load times, Core Web Vitals, and SEO-friendly code to rank higher on search engines.",
+  },
+];
+
+
+
+import React from "react";
+import { services } from "./servicesData";
+
+const ServicesPreview = ({ limit }) => {
+  const visibleServices = limit ? services.slice(0, limit) : services;
+
+  return (
+    <section className="services-preview">
+      <div className="container">
+        <div className="section-header">
+          <span className="section-badge">
+            <i className="fas fa-cogs me-1"></i> What We Offer
+          </span>
+          <h2 className="section-title">Web Development Services</h2>
+          <p className="text-secondary">
+            End-to-end web solutions tailored to your business needs
+          </p>
+        </div>
+
+        <div className="row g-4">
+          {visibleServices.map((service, index) => (
+            <div className="col-lg-4 col-md-6" key={index}>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className={service.icon}></i>
+                </div>
+                <h4>{service.title}</h4>
+                <p>{service.desc}</p>
+                <a href="#" className="service-link">
+                  Learn More <i className="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesPreview;
+
+
+
+
+
+
+------------------------------------------------------------------------------------- 
+database based
+--------------------------------------------------------------------------------------
+
+
+
+import React, { useEffect, useState } from "react";
+
+const ServicesPreview = ({ limit }) => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/services")
+      .then((res) => res.json())
+      .then((data) => setServices(data));
+  }, []);
+
+  const visibleServices = limit ? services.slice(0, limit) : services;
+
+  return (
+    <section className="services-preview">
+      <div className="container">
+        <div className="row g-4">
+          {visibleServices.map((service) => (
+            <div className="col-lg-4 col-md-6" key={service.id}>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className={service.icon}></i>
+                </div>
+                <h4>{service.title}</h4>
+                <p>{service.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesPreview;

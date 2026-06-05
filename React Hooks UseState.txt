@@ -1,0 +1,108 @@
+1)Counter App
+button click → number increase
+button click → decrease
+Reset button → 0
+
+2) Toggle Light
+“ON / OFF” switch
+ON → “Light is ON” show
+OFF → “Light is OFF”
+
+3) Text Input Display
+Input box
+Type பண்ணினா live text show ஆகணும்
+
+4) Button Click Message
+Button click → “Hello React” show ஆகணும்
+
+5) Show / Hide Text
+Button click → paragraph toggle
+
+6) Simple Name Saver
+Input → Name
+Button → Save
+Saved name display
+
+🟡 MEDIUM LEVEL (State handling improve)
+
+7) Counter with Limits
+min = 0, max = 20
+limit cross ஆகக்கூடாது
+
+8) Todo App (Basic)
+Add task
+Show list
+Delete button (each item)
+
+9) Multiple Input Form
+Name, Age, City
+Submit → display all data
+
+10) Password Show/Hide
+input type password
+toggle button → show/hide
+
+11) Like Button System
+❤️ click → count increase
+optional unlike toggle
+
+12) Background Color Changer
+button click → random color change
+
+13) Character Counter
+input type → “characters left: X”
+🔵 HARD LEVEL (Real app thinking)
+
+14) Todo with Edit Feature
+Add task
+Delete task
+Edit task (update existing one)
+
+15) Shopping List
+Add item
+Mark as “purchased”
+Remove item
+
+16) Form Validation
+Name required
+Age must be number > 18
+Error messages show using state
+
+17) Multi-step Form
+Step 1: Name
+Step 2: Email
+Step 3: Review & Submit
+
+18) Search Filter List
+Input search
+List filter automatically
+
+19) Dark Mode Toggle App
+Dark / Light theme switch
+whole UI color change
+
+20) Timer App
+Start / Stop / Reset
+seconds increase every second
+🔥 EXPERT CHALLENGE (Boss level)
+
+21) Todo + Local Storage
+refresh பண்ணாலும் data save ஆகணும்
+
+22) Mini Cart System
+add to cart
+quantity increase/decrease
+total count update
+
+23) Form + Validation + Submit state
+loading state
+success message
+error handling
+
+24) Expense Tracker (Mini App)
+add income/expense
+balance update live
+
+25) Quiz App
+question → next button
+score calculation

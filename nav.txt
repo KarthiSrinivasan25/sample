@@ -1,0 +1,256 @@
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+      <div className="container">
+
+        {/* Logo */}
+        <NavLink className="navbar-brand d-flex align-items-center" to="/">
+          <img
+            src="/asd_logo.png"
+            alt="Logo"
+            style={{
+              height: "60px",
+              width: "auto",
+              marginRight: "10px",
+            }}
+          />
+        </NavLink>
+
+        {/* Mobile Toggle */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#advancedNavbar"
+          aria-controls="advancedNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="advancedNavbar">
+
+          {/* NAV LINKS */}
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <li className="nav-item">
+              <NavLink to="/" end className="nav-link">
+                Home
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/about" className="nav-link">
+                About
+              </NavLink>
+            </li>
+
+            {/* DROPDOWN */}
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+
+              <ul className="dropdown-menu">
+
+                <li>
+                  <NavLink className="dropdown-item fw-bold" to="/service">
+                    All Services
+                  </NavLink>
+                </li>
+
+                <li><hr className="dropdown-divider" /></li>
+
+                <li>
+                  <NavLink className="dropdown-item" to="/web-development">
+                    Web Development
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="dropdown-item" to="/mobile-apps">
+                    Mobile Apps
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="dropdown-item" to="/ui-ux-design">
+                    UI/UX Design
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="dropdown-item" to="/cloud-solutions">
+                    Cloud Solutions
+                  </NavLink>
+                </li>
+
+              </ul>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/portfolio" className="nav-link">
+                Portfolio
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/career" className="nav-link">
+                Career
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink to="/contact" className="nav-link">
+                Contact
+              </NavLink>
+            </li>
+
+          </ul>
+
+          {/* CTA BUTTON */}
+          <div className="d-flex">
+            <NavLink to="/contact" className="btn btn-nav-cta">
+              <i className="fas fa-rocket me-2"></i>
+              Get In Touch
+            </NavLink>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+
+
+
+
+
+
+
+
+
+/* Navbar Base */
+.navbar {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+  padding: 0.85rem 0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(67, 97, 238, 0.08);
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1e293b;
+  margin: 0 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 40px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+  color: #4361ee;
+  background: rgba(67, 97, 238, 0.06);
+}
+
+/* ACTIVE STYLE (NO BUTTON BACKGROUND NOW) */
+.navbar-nav .nav-link.active {
+  color: #4361ee;
+  background: transparent !important;
+  font-weight: 700;
+}
+
+/* underline animation */
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(90deg, #4361ee, #4cc9f0);
+  border-radius: 4px;
+  transition: transform 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* CTA Button */
+.btn-nav-cta {
+  background: linear-gradient(95deg, #4361ee, #3a0ca3);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(67, 97, 238, 0.3);
+  color: white;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.7rem 0;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  font-weight: 500;
+  padding: 0.55rem 1.6rem;
+  transition: 0.2s;
+}
+
+.dropdown-item:hover {
+  background: rgba(67, 97, 238, 0.08);
+  color: #4361ee;
+  padding-left: 1.9rem;
+}
+
+/* Toggler */
+.navbar-toggler {
+  border: none;
+  background: rgba(67, 97, 238, 0.05);
+  border-radius: 12px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+}

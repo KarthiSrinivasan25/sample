@@ -232,3 +232,13 @@ https://www.luminousindia.com/product/iltt-28060?srsltid=AfmBOopUdPXQEjiFQuv9JOr
 
 
 https://preview.themeforest.net/item/royalcars-car-bike-rental-html-template/full_screen_preview/22230474
+
+
+
+CREATE TABLE cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    product_id INT,
+    qty INT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

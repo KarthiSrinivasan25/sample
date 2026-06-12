@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Karthikeyan S | Web Developer Portfolio</title>
+    <!-- SEO Meta Tags for Job Applications -->
+    <meta name="description"
+        content="Karthikeyan S - Web Developer with 1+ year of experience. Expert in React, Java, Bootstrap, and modern web technologies. Available for hire.">
+    <meta name="keywords"
+        content="web developer, react developer, java developer, portfolio, hire developer, job seeker">
+    <meta name="author" content="Karthikeyan S">
+    <!-- Bootstrap 5 + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- AOS Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #fefaf5;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        /* Creative typography */
+        h1,
+        h2,
+        h3,
+        .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom cursor */
+        .custom-cursor {
+            width: 8px;
+            height: 8px;
+            background: #d4a373;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+            mix-blend-mode: difference;
+        }
+
+        .creative-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title-creative {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title-creative:before {
+            content: '</>';
+            position: absolute;
+            left: -3rem;
+            top: 0.5rem;
+            font-size: 1.2rem;
+            opacity: 0.6;
+            color: #d4a373;
+            font-family: 'DM Sans', monospace;
+        }
+
+        /* Advanced Navigation */
+        .navbar-art {
+            background: rgba(254, 250, 245, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 0;
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+        }
+
+        /* .navbar-art.scrolled {
+            padding: 0.6rem 0;
+            background: rgba(254, 250, 245, 0.98);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.03);
+        } */
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #2b2b2b, #8b5a2b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.02);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            margin: 0 0.6rem;
+            position: relative;
+            color: #2c2c2c;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #d4a373;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: #b87c4f;
+            transform: translateY(-2px);
+        }
+
+        .resume-link {
+            background: #d4a373;
+            color: white !important;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            transition: all 0.3s;
+        }
+
+        .resume-link:hover {
+            background: #b87c4f;
+            transform: translateY(-2px);
+        }
+
+        .resume-link::after {
+            display: none;
+        }
+
+        /* Hamburger Menu */
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: none;
+            position: relative;
+            width: 28px;
+            height: 2px;
+            background: #2c241a;
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 2px;
+            background: #2c241a;
+            transition: all 0.3s;
+            left: 0;
+        }
+
+        .navbar-toggler-icon::before {
+            top: -8px;
+        }
+
+        .navbar-toggler-icon::after {
+            bottom: -8px;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background: transparent;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+            transform: rotate(-45deg);
+            bottom: 0;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: rgba(254, 250, 245, 0.98);
+                backdrop-filter: blur(20px);
+                padding: 5rem 2rem 2rem;
+                transition: left 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+                box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1);
+                z-index: 1050;
+                overflow-y: auto;
+            }
+
+            .navbar-collapse.show {
+                left: 0;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .nav-link {
+                padding: 0.8rem 0;
+                font-size: 1.1rem;
+                margin: 0;
+                border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+            }
+
+            .resume-link {
+                display: inline-block;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            .menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(4px);
+                z-index: 1040;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+
+            .menu-overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            body.menu-open {
+                overflow: hidden;
+            }
+        }
+
+        /* Hero Section */
+        .hero-creative {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(145deg, #fefaf5 0%, #fff6ed 100%);
+            position: relative;
+        }
+
+        .hero-name {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-accent {
+            color: #d4a373;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            border-left: 3px solid #d4a373;
+            padding-left: 1.5rem;
+        }
+
+        .floating-shape {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212, 163, 115, 0.15) 0%, rgba(212, 163, 115, 0) 70%);
+            border-radius: 50%;
+            right: 5%;
+            top: 20%;
+            z-index: 0;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Developer Card */
+        .dev-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 163, 115, 0.2);
+            border-radius: 25px;
+            padding: 35px 25px;
+            max-width: 380px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .dev-avatar {
+            width: 110px;
+            height: 110px;
+            margin: auto;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d4a373, #e9c46a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3.5rem;
+            box-shadow: 0 10px 25px rgba(212, 163, 115, 0.3);
+            overflow: hidden;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .tech-stack span {
+            background: #fff3e6;
+            color: #d4a373;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            padding-top: 15px;
+        }
+
+        .stats h4 {
+            color: #d4a373;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .stats small {
+            color: #777;
+        }
+
+        /* Left Bottom Social Links - Matching Color Pattern */
+        .hero-social-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(212, 163, 115, 0.3);
+        }
+
+        .hero-social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #4a3e35;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .hero-social-link i {
+            font-size: 1.3rem;
+            color: #d4a373;
+            transition: all 0.3s ease;
+        }
+
+        .hero-social-link:hover {
+            color: #b87c4f;
+            transform: translateY(-2px);
+        }
+
+        .hero-social-link:hover i {
+            color: #b87c4f;
+            transform: scale(1.1);
+        }
+
+        /* Cards */
+        .art-card {
+            background: #ffffff;
+            border-radius: 2rem;
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border: 1px solid rgba(212, 163, 115, 0.2);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+        }
+
+        .art-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(212, 163, 115, 0.5);
+            box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-badge-creative {
+            background: linear-gradient(135deg, #fff 0%, #faf3ea 100%);
+            border: 1px solid #e9d9cc;
+            padding: 0.6rem 1.3rem;
+            border-radius: 60px;
+            font-weight: 500;
+            transition: all 0.25s;
+            display: inline-block;
+        }
+
+        .skill-badge-creative:hover {
+            background: #d4a373;
+            color: white;
+            border-color: #d4a373;
+            transform: scale(1.02);
+        }
+
+        .project-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+        }
+
+        /* IMAGE STYLE */
+        .project-image {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(0, 0, 0, 0.35);
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        /* SHOW ON HOVER */
+        .project-card:hover .image-overlay {
+            opacity: 1;
+        }
+
+
+        /* BUTTON STYLE */
+        .image-overlay .btn {
+            border-radius: 20px;
+            font-size: 12px;
+            padding: 6px 14px;
+            transform: scale(0.9);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover .image-overlay .btn {
+            transform: scale(1);
+        }
+
+
+        /* ICON OVERLAY */
+        .image-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4a373;
+            font-size: 1.2rem;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover .image-icon {
+            transform: scale(1.1);
+            background: #d4a373;
+            color: #fff;
+        }
+
+        /* TAG */
+        .project-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: #f3e7da;
+            color: #8a5a3c;
+        }
+
+        .project-card h4 {
+            font-size: 1.1rem;
+            margin-top: 8px;
+            transition: 0.2s ease;
+        }
+
+        .project-card:hover h4 {
+            color: #d4a373;
+        }
+
+
+        .modal-content {
+            border-radius: 18px;
+            border: none;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header h5 {
+            font-size: 1.2rem;
+        }
+
+        .modal-body img {
+            border-radius: 12px;
+        }
+
+        .modal-body h6 {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .modal-body ul {
+            padding-left: 18px;
+        }
+
+        .modal-body ul li {
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        /* SUCCESS TEXT */
+        .text-success {
+            font-weight: 600;
+        }
+
+        .timeline-creative {
+            border-left: 2px dashed #d4a373;
+            padding-left: 2rem;
+        }
+
+        .exp-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .exp-dot {
+            width: 14px;
+            height: 14px;
+            background: #d4a373;
+            border-radius: 50%;
+            position: absolute;
+            left: -2.4rem;
+            top: 0.3rem;
+        }
+
+        .contact-glass {
+            background: rgba(255, 250, 240, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 3rem;
+            border: 1px solid rgba(212, 163, 115, 0.3);
+        }
+
+        .social-creative-icon {
+            font-size: 2rem;
+            color: #4a3b2c;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .social-creative-icon:hover {
+            color: #d4a373;
+            transform: translateY(-5px) rotate(5deg);
+        }
+
+        footer {
+            background: #2c241a;
+            color: #ccc6c0;
+        }
+
+        .available-badge {
+            background: #d4a373;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .btn-resume {
+            background: #d4a373;
+            border: none;
+            color: white;
+            border-radius: 50px;
+            padding: 0.6rem 2rem;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .btn-resume:hover {
+            background: #b87c4f;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-resume {
+            border: 2px solid #d4a373;
+            background: transparent;
+            color: #2c241a;
+            border-radius: 50px;
+            padding: 0.5rem 1.8rem;
+            font-weight: 500;
+            transition: 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-outline-resume:hover {
+            background: #d4a373;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-name {
+                font-size: 2.8rem;
+            }
+
+            .section-title-creative {
+                font-size: 2rem;
+            }
+
+            .section-title-creative:before {
+                left: -1.8rem;
+            }
+
+            .hero-social-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Custom cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Advanced Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-art fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">K.S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCreative"
+                aria-controls="navCreative" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCreative">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link resume-link" href="Karthikeyan-Resume.pdf" download><i
+                                class="bi bi-download me-1"></i> Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-creative py-5">
+            <div class="floating-shape"></div>
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row align-items-center py-5">
+                    <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="mb-4">
+                            <span class="available-badge">✦ Open to work ✦</span>
+                        </div>
+                        <h1 class="hero-name">
+                            Karthikeyan S<br>
+                            <span class="hero-accent">Web Developer,</span><br>
+                            problem solver.
+                        </h1>
+                        <p class="hero-desc mt-4">
+                            1+ year of experience building modern web applications.
+                            Specialized in React and Java development. Passionate about
+                            creating responsive, scalable, and user-friendly solutions.
+                            Seeking exciting opportunities to grow and contribute.
+                        </p>
+                        <div class="d-flex gap-3 mt-4 flex-wrap">
+                            <a href="#projects" class="btn btn-outline-dark rounded-pill px-4 py-2">
+                                View Projects <i class="bi bi-arrow-right-short"></i>
+                            </a>
+
+                            <a href="Karthikeyan-Resume.pdf" download class="btn-resume rounded-pill px-4 py-2">
+                                <i class="bi bi-file-text me-1"></i> Resume
+                            </a>
+                        </div>
+                        <div class="mt-4 d-flex gap-4 flex-wrap">
+                            <div><i class="bi bi-check-circle-fill" style="color: #d4a373;"></i> Multiple projects
+                                completed</div>
+                            <div><i class="bi bi-trophy-fill" style="color: #d4a373;"></i> 1+ year experience</div>
+                            <div><i class="bi bi-code-slash" style="color: #d4a373;"></i> React & Java Developer</div>
+                        </div>
+                        <!-- Left Bottom Social Links - Matching Color Pattern -->
+                        <div class="hero-social-links">
+                            <a href="https://github.com/yourprofile" target="_blank" class="hero-social-link">
+                                <i class="bi bi-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hero-social-link">
+                                <i class="bi bi-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:karthikeyan25082000@gmail.com" class="hero-social-link">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>Email</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
+                        <div class="dev-card mx-auto">
+                            <div class="dev-avatar">
+                                <i class="bi bi-person-fill" style="font-size: 3.5rem;"></i>
+                            </div>
+                            <h3 class="mt-3 mb-1">Karthikeyan S</h3>
+                            <p class="text-muted">Web Developer</p>
+                            <div class="tech-stack mt-3">
+                                <span>React</span>
+                                <span>Bootstrap</span>
+                                <span>Java</span>
+                                <span>Spring</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                            <div class="stats mt-4">
+                                <div>
+                                    <h4>1+</h4>
+                                    <small>Year</small>
+                                </div>
+                                <div>
+                                    <h4>10+</h4>
+                                    <small>Projects</small>
+                                </div>
+                                <div>
+                                    <h4>∞</h4>
+                                    <small>Learning</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="creative-section py-5">
+            <div class="container py-4">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <div class="bg-white rounded-4 p-4 text-center shadow-sm"
+                            style="border-left: 8px solid #d4a373;">
+                            <i class="bi bi-quote display-1 text-secondary opacity-25"></i>
+                            <p class="fs-4 fst-italic">"Every project is an opportunity to learn, improve, and create
+                                something valuable. I believe consistency and curiosity are the keys to becoming a
+                                better developer every day."</p>
+                            <hr class="w-25 mx-auto">
+                            <p class="small text-muted">— Developer Mindset</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7" data-aos="fade-left">
+                        <span class="text-uppercase small tracking-wide text-secondary">— Who I Am</span>
+                        <h2 class="section-title-creative mt-2">About Me</h2>
+                        <p class="lead">I'm a passionate Web Developer with over <strong>1 year of professional
+                                experience </strong> building and
+                            maintaining web applications using <strong> HTML, CSS, Bootstrap, PHP, and MySQL</strong>.
+                            I enjoy creating responsive, user-friendly websites and writing clean, maintainable code
+                            that
+                            delivers a great user experience.
+                        </p>
+                        <p class="text-secondary">Alongside my professional work, I continuously expand my skills by
+                            developing personal projects and exploring modern technologies. Through self-learning and
+                            hands-on projects, I have gained practical experience with <strong> React.js, Java, and
+                                Spring Boot</strong>, strengthening my understanding of full-stack application
+                            development.</p>
+                        <p>I am passionate about learning new technologies, solving real-world problems, and improving
+                            my development skills every day. My goal is to join a forward-thinking team where I can
+                            contribute, grow as a developer, and work on impactful products.</p>
+                        <div class="mt-3 d-flex gap-3 flex-wrap">
+                            <span class="skill-badge-creative">Web Developer</span>
+                            <span class="skill-badge-creative">1+ Year Experience</span>
+                            <span class="skill-badge-creative">Problem Solver</span>
+                            <span class="skill-badge-creative">Immediate Joiner</span>
+                            <span class="skill-badge-creative">Open to Work</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="creative-section py-5" style="background: #fdf8f2;">
+            <div class="container py-4">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title-creative" style="display: inline-block;">Work Experience</h2>
+                    <p class="text-muted mt-2">professional journey & key achievements</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="timeline-creative">
+
+                            <!-- Current Job -->
+                            <div class="exp-item" data-aos="fade-up">
+                                <div class="exp-dot"></div>
+                                <div class="art-card p-4">
+                                    <span class="badge bg-dark text-white mb-2">2025 — Present</span>
+                                    <h3 class="fw-bold">Web Developer · Best Webmasterz</h3>
+                                    <p class="text-muted">Salem, India</p>
+
+                                    <p>
+                                        Working as a Web Developer, developing and maintaining responsive web
+                                        applications
+                                        using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.
+                                        Responsible for building user-friendly interfaces, handling backend integration,
+                                        and ensuring website performance and responsiveness.
+                                    </p>
+
+                                    <div class="d-flex gap-2 flex-wrap mt-2">
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">HTML</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">CSS</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Bootstrap</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">JavaScript</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">PHP</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Previous / Learning Experience (optional) -->
+                            <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="exp-dot"></div>
+                                <div class="art-card p-4">
+                                    <span class="badge bg-dark text-white mb-2">Learning Phase</span>
+                                    <h3 class="fw-bold">Self Learning · Personal Projects</h3>
+                                    <p class="text-muted">Java · Spring Boot · React.js</p>
+
+                                    <p>
+                                        Developed personal projects to improve my skills in web development and gain
+                                        hands-on experience with modern development practices and problem solving.
+                                    </p>
+
+                                    <div class="d-flex gap-2 flex-wrap mt-2">
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Java</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Spring Boot</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">React.js</span>
+                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Full Stack
+                                            Practice</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="creative-section py-5" ">
+    <div class=" container py-4">
+
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title-creative">Tech Stack</h2>
+                <p class="text-muted">Technologies I work with & continuously improve</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Frontend -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="art-card p-4 h-100 shadow-sm">
+                        <h5 class="fw-bold mb-3">Frontend</h5>
+                        <p class="text-muted small mb-3">Building responsive and interactive UI</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge-creative">HTML5</span>
+                            <span class="skill-badge-creative">CSS3</span>
+                            <span class="skill-badge-creative">JavaScript</span>
+                            <span class="skill-badge-creative">Bootstrap 5</span>
+                            <span class="skill-badge-creative">React.js (Learning)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="art-card p-4 h-100 shadow-sm">
+                        <h5 class="fw-bold mb-3">Backend</h5>
+                        <p class="text-muted small mb-3">Server-side logic & APIs</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge-creative">PHP</span>
+                            <span class="skill-badge-creative">MySQL</span>
+                            <span class="skill-badge-creative">Java (Learning)</span>
+                            <span class="skill-badge-creative">Spring Boot (Learning)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="art-card p-4 h-100 shadow-sm">
+                        <h5 class="fw-bold mb-3">Tools</h5>
+                        <p class="text-muted small mb-3">Development & productivity tools</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge-creative">Git & GitHub</span>
+                            <span class="skill-badge-creative">VS Code</span>
+                            <span class="skill-badge-creative">Eclipse</span>
+                            <span class="skill-badge-creative">Postman</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="creative-section py-5" style="background: #fff8f2;">
+            <div class="container py-4">
+
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title-creative">Featured Projects</h2>
+                    <p class="text-muted">A selection of real-world and practice applications I've built</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="project-card p-4 shadow-sm h-100">
+
+                            <!-- IMAGE -->
+                            <div class="project-image mb-3 position-relative">
+
+                                <img src="images/shopkart.jpg" class="img-fluid project-img">
+
+                                <!-- HOVER OVERLAY -->
+                                <div class="image-overlay">
+                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#project1Modal">
+                                        View Details
+                                    </button>
+                                </div>
+
+                                <!-- ICON -->
+                                <div class="image-icon">
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+
+                            </div>
+
+                            <span class="project-tag">E-Commerce</span>
+
+                            <h4 class="fw-bold mt-2">Secure Kids E-Commerce Platform</h4>
+
+                            <p class="text-muted small">
+                                Secure kids e-commerce platform with JWT authentication, role-based access control,
+                                and dynamic admin dashboard for real-time product management.
+                            </p>
+
+                            <!-- TECH STACK -->
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge-creative">HTML</span>
+                                <span class="skill-badge-creative">CSS</span>
+                                <span class="skill-badge-creative">JavaScript</span>
+                                <span class="skill-badge-creative">PHP</span>
+                                <span class="skill-badge-creative">MySQL</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card p-4 shadow-sm h-100">
+
+                            <!-- IMAGE -->
+                            <div class="project-image mb-3 position-relative">
+
+                                <img src="images/taskflow.jpg" class="img-fluid project-img">
+
+                                <!-- HOVER OVERLAY -->
+                                <div class="image-overlay">
+                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#project2Modal">
+                                        View Details
+                                    </button>
+                                </div>
+
+                                <!-- ICON -->
+                                <div class="image-icon">
+                                    <i class="bi bi-mortarboard"></i>
+                                </div>
+
+                            </div>
+
+                            <span class="project-tag">School Website</span>
+
+                            <h4 class="fw-bold mt-2">Stenofly – Kids School Website</h4>
+
+                            <p class="text-muted small">
+                                A responsive 6-page mobile-first school website with PHP-powered enquiry system,
+                                server-side validation, and email notification for real-time visitor enquiries.
+                            </p>
+
+                            <!-- TECH STACK -->
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="skill-badge-creative">HTML5</span>
+                                <span class="skill-badge-creative">CSS3</span>
+                                <span class="skill-badge-creative">JavaScript</span>
+                                <span class="skill-badge-creative">Bootstrap 5</span>
+                                <span class="skill-badge-creative">PHP</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ================= PROJECT 3 ================= -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card p-4 shadow-sm h-100">
+
+                            <!-- IMAGE -->
+                            <div class="project-image mb-3 position-relative">
+
+                                <img src="images/portfolio.jpg" class="img-fluid project-img">
+
+                                <!-- HOVER OVERLAY -->
+                                <div class="image-overlay">
+                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#project3Modal">
+                                        View Details
+                                    </button>
+                                </div>
+
+                                <!-- ICON -->
+                                <div class="image-icon">
+                                    <i class="bi bi-collection"></i>
+                                </div>
+
+                            </div>
+
+                            <span class="project-tag">Admin Panel</span>
+
+                            <h4 class="fw-bold mt-2">Dialmia Business Directory</h4>
+
+                            <p class="text-muted small">
+                                Admin-side listing management system for a national business directory, handling
+                                large-scale business data across multiple cities with structured categorization and SEO
+                                optimization.
+                            </p>
+
+                            <!-- TECH STACK -->
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+
+                                <span class="skill-badge-creative">Admin Panel</span>
+                                <span class="skill-badge-creative">Data Management</span>
+                                <span class="skill-badge-creative">Business Listings</span>
+                                <span class="skill-badge-creative">SEO Optimization</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- project 4 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card p-4 shadow-sm h-100">
+
+                            <!-- IMAGE -->
+                            <div class="project-image mb-3 position-relative">
+
+                                <img src="images/portfolio.jpg" class="img-fluid project-img">
+
+                                <!-- HOVER OVERLAY -->
+                                <div class="image-overlay">
+                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#project4Modal">
+                                        View Details
+                                    </button>
+                                </div>
+
+                                <!-- ICON -->
+                                <div class="image-icon">
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                            </div>
+
+                            <span class="project-tag">SEO Optimization</span>
+
+                            <h4 class="fw-bold mt-2">Dialmia Business Directory - SEO Project</h4>
+
+                            <p class="text-muted small">
+                                On-page SEO optimization project focused on improving organic visibility for a
+                                large-scale
+                                business directory through keyword strategy and content optimization.
+                            </p>
+
+                            <!-- TECH STACK / SKILLS -->
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+
+                                <span class="skill-badge-creative">On-Page SEO</span>
+                                <span class="skill-badge-creative">Keyword Research</span>
+                                <span class="skill-badge-creative">Content Optimization</span>
+                                <span class="skill-badge-creative">Meta Tags</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MODAL 1 ================= -->
+        <div class="modal fade" id="project1Modal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3">
+
+                    <div class="modal-header border-0">
+                        <h5 class="fw-bold">Secure Kids E-Commerce Platform</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
+
+                        <p>
+                            Full-stack secure e-commerce platform built using PHP and MySQL with JWT authentication
+                            and role-based access control.
+                        </p>
+
+                        <h6>Key Features</h6>
+                        <ul>
+                            <li>JWT Authentication System</li>
+                            <li>Role-based Access Control</li>
+                            <li>Dynamic Product Management</li>
+                            <li>Secure Backend (PHP + MySQL)</li>
+                            <li>Responsive UI (Bootstrap 5)</li>
+                        </ul>
+
+                        <h6>Impact</h6>
+                        <p class="text-success">
+                            Reduced manual inventory updates by ~40% and eliminated unauthorized access issues.
+                        </p>
+
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <a href="#" class="btn btn-dark btn-sm">Live Demo</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= MODAL 2 ================= -->
+        <div class="modal fade" id="project2Modal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3">
+
+                    <div class="modal-header border-0">
+                        <h5 class="fw-bold">Stenofly – Kids School Website</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
+
+
+                        <p>
+                            A fully responsive 6-page school website designed for smooth user experience,
+                            optimized performance, and reliable enquiry handling.
+                        </p>
+
+                        <h6>Features</h6>
+                        <ul>
+                            <li>6-page responsive mobile-first website</li>
+                            <li>Built with HTML5, CSS3, JavaScript, Bootstrap 5 & PHP</li>
+                            <li>Server-side validated enquiry form</li>
+                            <li>Email notification system for enquiries</li>
+                            <li>Cross-browser compatible & WCAG-friendly design</li>
+                            <li>Optimized page load performance</li>
+                        </ul>
+
+                        <h6>Impact</h6>
+                        <p class="text-success">
+                            Ensured 100% enquiry tracking via digital system
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= MODAL 3 ================= -->
+        <div class="modal fade" id="project3Modal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3">
+
+                    <div class="modal-header border-0">
+                        <h5 class="fw-bold">Dialmia Business Directory</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
+
+                        <p>
+                            A scalable admin dashboard for managing large-scale business listings across multiple
+                            cities.
+                            Focused on structured data management, accuracy, and SEO optimization.
+                        </p>
+
+
+                        <h6>Features</h6>
+                        <ul>
+                            <li>Admin management of 500+ business listings</li>
+                            <li>Structured data handling (category, city, contact info)</li>
+                            <li>Multi-city organization (15+ cities)</li>
+                            <li>Reduced mis-categorization by ~30%</li>
+                            <li>SEO-optimized listing updates</li>
+                        </ul>
+
+                        <h6>Impact</h6>
+                        <p class="text-success">
+                            Improved data accuracy and directory navigation efficiency
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= MODAL 4 ================= -->
+        <div class="modal fade" id="project4Modal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3">
+
+                    <div class="modal-header border-0">
+                        <h5 class="fw-bold">Dialmia Business Directory</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
+
+                        <p>
+                            SEO optimization project focused on improving organic search visibility for a large-scale
+                            business directory platform through structured on-page SEO improvements.
+                        </p>
+
+
+                        <h6>Features</h6>
+                        <ul>
+                            <li>Keyword research for 20+ categories and city-based searches</li>
+                            <li>Optimized 500+ pages (titles, meta descriptions, Keyowrds, URLs)</li>
+                            <li>Improved site crawlability and search index performance</li>
+                            <li>Created standardized SEO content templates</li>
+                        </ul>
+
+                        <h6>Impact</h6>
+                        <p class="text-success">
+                            Improved overall search visibility and consistency across large-scale directory pages.
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Education + Certifications -->
+        <section id="education" class="creative-section py-5">
+            <div class="container py-4">
+                <div class="row g-5">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <h2 class="section-title-creative">Education</h2>
+                        <div class="art-card p-4 mb-3">
+                            <i class="bi bi-mortarboard-fill fs-2" style="color: #d4a373;"></i>
+                            <h4 class="mt-2">Bachelor of Engineering in Computer Science</h4>
+                            <p class="text-muted">Anna University, Chennai · 2020-2024</p>
+                            <p>CGPA: 8.5/10. Coursework: Web Development, Database Systems, OOP, Data Structures.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="section-title-creative">Certifications</h2>
+                        <div class="art-card d-flex align-items-center gap-3 p-3 mb-2">
+                            <i class="bi bi-code-square fs-2" style="color: #d4a373;"></i>
+                            <div><strong>React - The Complete Guide</strong>
+                                <div class="text-muted small">Udemy · 2024</div>
+                            </div>
+                        </div>
+                        <div class="art-card d-flex align-items-center gap-3 p-3 mb-2">
+                            <i class="bi bi-java fs-2" style="color: #d4a373;"></i>
+                            <div><strong>Java Programming Masterclass</strong>
+                                <div class="text-muted small">Coursera · 2023</div>
+                            </div>
+                        </div>
+                        <div class="art-card d-flex align-items-center gap-3 p-3">
+                            <i class="bi bi-bootstrap fs-2" style="color: #d4a373;"></i>
+                            <div><strong>Bootstrap 5 Certification</strong>
+                                <div class="text-muted small">freeCodeCamp · 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="creative-section py-5">
+            <div class="container py-5">
+                <div class="contact-glass p-5 text-center" data-aos="zoom-in">
+                    <i class="bi bi-envelope-paper-heart fs-1" style="color: #d4a373;"></i>
+                    <h2 class="display-5 fw-semibold mt-3">Ready to contribute.</h2>
+                    <p class="mx-auto" style="max-width: 550px;">I'm actively seeking full-time opportunities as a Web
+                        Developer. Let's connect!</p>
+                    <div class="d-flex justify-content-center gap-5 my-4 flex-wrap">
+                        <a href="#" class="social-creative-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-creative-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-creative-icon"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="mailto:karthikeyan.s@dev.com"
+                            class="btn btn-dark rounded-pill px-5 py-3 fs-6">karthikeyan.s@dev.com <i
+                                class="bi bi-send ms-2"></i></a>
+                        <div class="mt-3">
+                            <a href="Karthikeyan-Resume.pdf" download class="btn-outline-resume"><i
+                                    class="bi bi-download me-1"></i>Download Resume</a>
+                        </div>
+                        <p class="text-muted mt-4 small">📍 Chennai, India · Available for remote, hybrid, or relocation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small opacity-75">© 2026 Karthikeyan S — Web Developer. Available for new opportunities.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 30 });
+
+        // Custom cursor
+        const cursor = document.querySelector('.custom-cursor');
+        if (cursor) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX - 4 + 'px';
+                cursor.style.top = e.clientY - 4 + 'px';
+            });
+            document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+            document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (nav && window.scrollY > 50) nav.classList.add('scrolled');
+            else if (nav) nav.classList.remove('scrolled');
+        });
+
+        // Mobile menu overlay
+        const toggler = document.querySelector('.navbar-toggler');
+        const collapse = document.getElementById('navCreative');
+        const overlay = document.getElementById('menuOverlay');
+
+        if (toggler && collapse && overlay) {
+            toggler.addEventListener('click', () => {
+                setTimeout(() => {
+                    if (collapse.classList.contains('show')) {
+                        overlay.classList.add('active');
+                        document.body.classList.add('menu-open');
+                    } else {
+                        overlay.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    }
+                }, 10);
+            });
+
+            overlay.addEventListener('click', () => {
+                toggler.click();
+            });
+        }
+
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992 && collapse && collapse.classList.contains('show')) {
+                    toggler.click();
+                }
+            });
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            const href = anchor.getAttribute('href');
+            if (href && href !== '#' && href.length > 1) {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = href.slice(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

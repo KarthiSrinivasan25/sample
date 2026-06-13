@@ -242,3 +242,6 @@ CREATE TABLE cart (
     qty INT DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+https://drive.google.com/file/d/1mcTqS8sRo0Xbgn_z6WN73P8U_uztCEQB/view?usp=sharing

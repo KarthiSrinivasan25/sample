@@ -249,3 +249,6 @@ https://drive.google.com/file/d/1mcTqS8sRo0Xbgn_z6WN73P8U_uztCEQB/view?usp=shari
 
 
 https://cube84.com/careers
+
+
+https://preview.themeforest.net/item/dailycart-multipurpose-ecommerce-food-grocery-delivery-mobile-template/full_screen_preview/59565641

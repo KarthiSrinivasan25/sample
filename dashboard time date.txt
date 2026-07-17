@@ -1,0 +1,70 @@
+import android.os.Handler
+import android.os.Looper
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+
+
+private val timeHandler = Handler(Looper.getMainLooper())
+
+private val timeRunnable = object : Runnable {
+    override fun run() {
+
+        val dateFormat = SimpleDateFormat(
+            "EEE, dd MMM\nhh:mm:ss a",
+            Locale.getDefault()
+        )
+
+        binding.dashboardHeader.txtDateTime.text =
+            dateFormat.format(Date())
+
+        timeHandler.postDelayed(this, 1000)
+    }
+}
+
+
+private fun setupHeader() {
+
+    val name = sessionManager.getName()
+    val displayName = if (name.isNotBlank()) name else "Admin"
+
+    binding.dashboardHeader.txtWelcome.text =
+        "Welcome, $displayName"
+
+    binding.dashboardHeader.txtAvatarInitial.text =
+        displayName.trim().take(1).uppercase()
+
+
+    val hour = Calendar.getInstance()
+        .get(Calendar.HOUR_OF_DAY)
+
+    binding.dashboardHeader.txtGreetingTime.text =
+        when {
+            hour < 12 -> "Good Morning 👋"
+            hour < 17 -> "Good Afternoon 👋"
+            else -> "Good Evening 👋"
+        }
+
+
+    // Start live clock
+    timeHandler.post(timeRunnable)
+}
+
+
+override fun onDestroy() {
+    super.onDestroy()
+    timeHandler.removeCallbacks(timeRunnable)
+}
+
+
+<TextView
+    android:id="@+id/txtDateTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:gravity="center"
+    android:lineSpacingExtra="2dp"
+    android:text="Fri, 17 Jul\n10:30:45 AM"
+    android:textColor="@color/text_on_gradient_muted"
+    android:textSize="12sp"
+    android:textStyle="bold" />

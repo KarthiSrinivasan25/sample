@@ -252,3 +252,20 @@ https://cube84.com/careers
 
 
 https://preview.themeforest.net/item/dailycart-multipurpose-ecommerce-food-grocery-delivery-mobile-template/full_screen_preview/59565641
+
+
+
+   android:background="@drawable/bg_circle_icon"
+
+
+
+
+   <?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#00A86B"/>
+
+    <corners android:radius="50dp"/>
+
+</shape>

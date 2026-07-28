@@ -1,1523 +1,1486 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Karthikeyan S | Web Developer Portfolio</title>
-    <!-- SEO Meta Tags for Job Applications -->
-    <meta name="description"
-        content="Karthikeyan S - Web Developer with 1+ year of experience. Expert in React, Java, Bootstrap, and modern web technologies. Available for hire.">
-    <meta name="keywords"
-        content="web developer, react developer, java developer, portfolio, hire developer, job seeker">
-    <meta name="author" content="Karthikeyan S">
-    <!-- Bootstrap 5 + Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <!-- AOS Scroll Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background-color: #fefaf5;
-            color: #1a1a1a;
-            overflow-x: hidden;
-        }
-
-        /* Creative typography */
-        h1,
-        h2,
-        h3,
-        .serif-text {
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* Custom cursor */
-        .custom-cursor {
-            width: 8px;
-            height: 8px;
-            background: #d4a373;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-            mix-blend-mode: difference;
-        }
-
-        .creative-section {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section-title-creative {
-            font-size: 3rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title-creative:before {
-            content: '</>';
-            position: absolute;
-            left: -3rem;
-            top: 0.5rem;
-            font-size: 1.2rem;
-            opacity: 0.6;
-            color: #d4a373;
-            font-family: 'DM Sans', monospace;
-        }
-
-        /* Advanced Navigation */
-        .navbar-art {
-            background: rgba(254, 250, 245, 0.95);
-            backdrop-filter: blur(20px);
-            padding: 1rem 0;
-            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            border-bottom: 1px solid rgba(212, 163, 115, 0.2);
-        }
-
-        /* .navbar-art.scrolled {
-            padding: 0.6rem 0;
-            background: rgba(254, 250, 245, 0.98);
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.03);
-        } */
-
-        .navbar-brand {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            background: linear-gradient(135deg, #2b2b2b, #8b5a2b);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            transition: transform 0.3s ease;
-        }
-
-        .navbar-brand:hover {
-            transform: scale(1.02);
-        }
-
-        .nav-link {
-            font-weight: 500;
-            margin: 0 0.6rem;
-            position: relative;
-            color: #2c2c2c;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background: #d4a373;
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .nav-link:hover {
-            color: #b87c4f;
-            transform: translateY(-2px);
-        }
-
-        .resume-link {
-            background: #d4a373;
-            color: white !important;
-            padding: 0.4rem 1.2rem;
-            border-radius: 40px;
-            transition: all 0.3s;
-        }
-
-        .resume-link:hover {
-            background: #b87c4f;
-            transform: translateY(-2px);
-        }
-
-        .resume-link::after {
-            display: none;
-        }
-
-        /* Hamburger Menu */
-        .navbar-toggler {
-            border: none;
-            padding: 0.5rem;
-            transition: all 0.3s;
-        }
-
-        .navbar-toggler:focus {
-            box-shadow: none;
-            outline: none;
-        }
-
-        .navbar-toggler-icon {
-            background-image: none;
-            position: relative;
-            width: 28px;
-            height: 2px;
-            background: #2c241a;
-            transition: all 0.3s;
-            display: block;
-        }
-
-        .navbar-toggler-icon::before,
-        .navbar-toggler-icon::after {
-            content: '';
-            position: absolute;
-            width: 28px;
-            height: 2px;
-            background: #2c241a;
-            transition: all 0.3s;
-            left: 0;
-        }
-
-        .navbar-toggler-icon::before {
-            top: -8px;
-        }
-
-        .navbar-toggler-icon::after {
-            bottom: -8px;
-        }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-            background: transparent;
-        }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
-            transform: rotate(45deg);
-            top: 0;
-        }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-            transform: rotate(-45deg);
-            bottom: 0;
-        }
-
-        /* Mobile Menu */
-        @media (max-width: 991px) {
-            .navbar-collapse {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 80%;
-                max-width: 350px;
-                height: 100vh;
-                background: rgba(254, 250, 245, 0.98);
-                backdrop-filter: blur(20px);
-                padding: 5rem 2rem 2rem;
-                transition: left 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-                box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1);
-                z-index: 1050;
-                overflow-y: auto;
-            }
-
-            .navbar-collapse.show {
-                left: 0;
-            }
-
-            .navbar-nav {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .nav-link {
-                padding: 0.8rem 0;
-                font-size: 1.1rem;
-                margin: 0;
-                border-bottom: 1px solid rgba(212, 163, 115, 0.2);
-            }
-
-            .resume-link {
-                display: inline-block;
-                margin-top: 1rem;
-                text-align: center;
-            }
-
-            .menu-overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.4);
-                backdrop-filter: blur(4px);
-                z-index: 1040;
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s;
-            }
-
-            .menu-overlay.active {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            body.menu-open {
-                overflow: hidden;
-            }
-        }
-
-        /* Hero Section */
-        .hero-creative {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(145deg, #fefaf5 0%, #fff6ed 100%);
-            position: relative;
-        }
-
-        .hero-name {
-            font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 1.1;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .hero-accent {
-            color: #d4a373;
-        }
-
-        .hero-desc {
-            font-size: 1.1rem;
-            color: #5a5a5a;
-            border-left: 3px solid #d4a373;
-            padding-left: 1.5rem;
-        }
-
-        .floating-shape {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(212, 163, 115, 0.15) 0%, rgba(212, 163, 115, 0) 70%);
-            border-radius: 50%;
-            right: 5%;
-            top: 20%;
-            z-index: 0;
-            animation: float 8s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        /* Developer Card */
-        .dev-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 163, 115, 0.2);
-            border-radius: 25px;
-            padding: 35px 25px;
-            max-width: 380px;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
-            position: relative;
-        }
-
-        .dev-avatar {
-            width: 110px;
-            height: 110px;
-            margin: auto;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #d4a373, #e9c46a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3.5rem;
-            box-shadow: 0 10px 25px rgba(212, 163, 115, 0.3);
-            overflow: hidden;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .tech-stack span {
-            background: #fff3e6;
-            color: #d4a373;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
-            padding-top: 15px;
-        }
-
-        .stats h4 {
-            color: #d4a373;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .stats small {
-            color: #777;
-        }
-
-        /* Left Bottom Social Links - Matching Color Pattern */
-        .hero-social-links {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(212, 163, 115, 0.3);
-        }
-
-        .hero-social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            color: #4a3e35;
-            transition: all 0.3s ease;
-            padding: 0.5rem 0;
-        }
-
-        .hero-social-link i {
-            font-size: 1.3rem;
-            color: #d4a373;
-            transition: all 0.3s ease;
-        }
-
-        .hero-social-link:hover {
-            color: #b87c4f;
-            transform: translateY(-2px);
-        }
-
-        .hero-social-link:hover i {
-            color: #b87c4f;
-            transform: scale(1.1);
-        }
-
-        /* Cards */
-        .art-card {
-            background: #ffffff;
-            border-radius: 2rem;
-            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            border: 1px solid rgba(212, 163, 115, 0.2);
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
-        }
-
-        .art-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(212, 163, 115, 0.5);
-            box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.15);
-        }
-
-        .skill-badge-creative {
-            background: linear-gradient(135deg, #fff 0%, #faf3ea 100%);
-            border: 1px solid #e9d9cc;
-            padding: 0.6rem 1.3rem;
-            border-radius: 60px;
-            font-weight: 500;
-            transition: all 0.25s;
-            display: inline-block;
-        }
-
-        .skill-badge-creative:hover {
-            background: #d4a373;
-            color: white;
-            border-color: #d4a373;
-            transform: scale(1.02);
-        }
-
-        .project-card {
-            position: relative;
-            background: #ffffff;
-            border-radius: 18px;
-            border: 1px solid rgba(0, 0, 0, 0.06);
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
-        }
-
-        /* IMAGE STYLE */
-        .project-image {
-            width: 100%;
-            height: 180px;
-            overflow: hidden;
-            border-radius: 12px;
-            position: relative;
-        }
-
-        .project-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.3s ease;
-        }
-
-        .project-card:hover .project-img {
-            transform: scale(1.05);
-        }
-
-        .image-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background: rgba(0, 0, 0, 0.35);
-            opacity: 0;
-            transition: 0.3s ease;
-        }
-
-        /* SHOW ON HOVER */
-        .project-card:hover .image-overlay {
-            opacity: 1;
-        }
-
-
-        /* BUTTON STYLE */
-        .image-overlay .btn {
-            border-radius: 20px;
-            font-size: 12px;
-            padding: 6px 14px;
-            transform: scale(0.9);
-            transition: 0.3s ease;
-        }
-
-        .project-card:hover .image-overlay .btn {
-            transform: scale(1);
-        }
-
-
-        /* ICON OVERLAY */
-        .image-icon {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 42px;
-            height: 42px;
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #d4a373;
-            font-size: 1.2rem;
-            backdrop-filter: blur(4px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: 0.3s ease;
-        }
-
-        .project-card:hover .image-icon {
-            transform: scale(1.1);
-            background: #d4a373;
-            color: #fff;
-        }
-
-        /* TAG */
-        .project-tag {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 20px;
-            background: #f3e7da;
-            color: #8a5a3c;
-        }
-
-        .project-card h4 {
-            font-size: 1.1rem;
-            margin-top: 8px;
-            transition: 0.2s ease;
-        }
-
-        .project-card:hover h4 {
-            color: #d4a373;
-        }
-
-
-        .modal-content {
-            border-radius: 18px;
-            border: none;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-        }
-
-        .modal-header h5 {
-            font-size: 1.2rem;
-        }
-
-        .modal-body img {
-            border-radius: 12px;
-        }
-
-        .modal-body h6 {
-            margin-top: 15px;
-            font-weight: 600;
-        }
-
-        .modal-body ul {
-            padding-left: 18px;
-        }
-
-        .modal-body ul li {
-            margin-bottom: 6px;
-            color: #555;
-        }
-
-        /* SUCCESS TEXT */
-        .text-success {
-            font-weight: 600;
-        }
-
-        .timeline-creative {
-            border-left: 2px dashed #d4a373;
-            padding-left: 2rem;
-        }
-
-        .exp-item {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-
-        .exp-dot {
-            width: 14px;
-            height: 14px;
-            background: #d4a373;
-            border-radius: 50%;
-            position: absolute;
-            left: -2.4rem;
-            top: 0.3rem;
-        }
-
-        .contact-glass {
-            background: rgba(255, 250, 240, 0.8);
-            backdrop-filter: blur(8px);
-            border-radius: 3rem;
-            border: 1px solid rgba(212, 163, 115, 0.3);
-        }
-
-        .social-creative-icon {
-            font-size: 2rem;
-            color: #4a3b2c;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .social-creative-icon:hover {
-            color: #d4a373;
-            transform: translateY(-5px) rotate(5deg);
-        }
-
-        footer {
-            background: #2c241a;
-            color: #ccc6c0;
-        }
-
-        .available-badge {
-            background: #d4a373;
-            color: white;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            display: inline-block;
-        }
-
-        .btn-resume {
-            background: #d4a373;
-            border: none;
-            color: white;
-            border-radius: 50px;
-            padding: 0.6rem 2rem;
-            font-weight: 500;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.2s;
-        }
-
-        .btn-resume:hover {
-            background: #b87c4f;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline-resume {
-            border: 2px solid #d4a373;
-            background: transparent;
-            color: #2c241a;
-            border-radius: 50px;
-            padding: 0.5rem 1.8rem;
-            font-weight: 500;
-            transition: 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-outline-resume:hover {
-            background: #d4a373;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .hero-name {
-                font-size: 2.8rem;
-            }
-
-            .section-title-creative {
-                font-size: 2rem;
-            }
-
-            .section-title-creative:before {
-                left: -1.8rem;
-            }
-
-            .hero-social-links {
-                gap: 1rem;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swetha — A Scrapbook of Memories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF3E7;
+    --paper-2:#F6E9DC;
+    --paper-edge:#EADCC8;
+    --rose:#E8879B;
+    --rose-deep:#C85C77;
+    --plum:#4A2E35;
+    --sage:#92A87E;
+    --sage-deep:#6E8459;
+    --gold:#D4A657;
+    --gold-deep:#B98430;
+    --ink:#5B4247;
+    --tape: rgba(212,166,87,.55);
+    --thread: rgba(74,46,53,.28);
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Karla',sans-serif;
+    background:var(--paper);
+    color:var(--plum);
+    overflow-x:hidden;
+    position:relative;
+  }
+
+  body::before{
+    content:"";
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    opacity:.5; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.29  0 0 0 0 0.18  0 0 0 0 0.20  0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  body::after{
+    content:"";
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(circle at 18% 15%, rgba(232,135,155,.08), transparent 42%),
+      radial-gradient(circle at 82% 68%, rgba(146,168,126,.09), transparent 46%),
+      radial-gradient(circle at 50% 90%, rgba(212,166,87,.06), transparent 40%);
+  }
+
+  h1,h2{ font-family:'Fraunces', serif; }
+  .script{ font-family:'Caveat', cursive; }
+  .mono{ font-family:'Space Mono', monospace; letter-spacing:.03em; }
+
+  .pinboard{
+    position:fixed; right:20px; top:50%; transform:translateY(-50%); z-index:900;
+    display:flex; flex-direction:column; gap:15px;
+    background: linear-gradient(180deg, rgba(255,255,255,.05), transparent 40%), #cba876;
+    padding:16px 10px; border-radius:14px;
+    box-shadow:0 10px 26px rgba(74,46,53,.3), inset 0 0 0 1px rgba(0,0,0,.08), inset 0 0 24px rgba(74,46,53,.15);
+    background-image: radial-gradient(rgba(74,46,53,.08) 1px, transparent 1.4px);
+    background-size:6px 6px;
+  }
+  .pin{
+    width:15px; height:15px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #f3b6c4, var(--rose) 60%, var(--rose-deep));
+    box-shadow:0 3px 4px rgba(0,0,0,.35), inset 0 -2px 2px rgba(0,0,0,.2);
+    cursor:pointer; border:none; position:relative; transition:.25s;
+  }
+  .pin.active{
+    background:radial-gradient(circle at 35% 30%, #ffe2a8, var(--gold) 60%, var(--gold-deep));
+    transform:scale(1.4);
+  }
+  .pin::after{
+    content:attr(data-label);
+    position:absolute; right:28px; top:50%; transform:translateY(-50%) translateX(6px);
+    font-family:'Caveat',cursive; font-size:16px; font-weight:600;
+    background:var(--plum); color:var(--paper);
+    padding:4px 12px; border-radius:4px 10px 10px 4px;
+    white-space:nowrap; opacity:0; pointer-events:none;
+    transition:.22s;
+  }
+  .pin:hover::after{ opacity:1; transform:translateY(-50%) translateX(0); }
+  @media(max-width:768px){ .pinboard{ display:none; } }
+
+  .player{
+    position:fixed; left:18px; bottom:18px; z-index:900;
+    background:linear-gradient(160deg,#5a373f,var(--plum));
+    color:var(--paper); border-radius:16px; padding:12px 16px 12px 14px;
+    display:flex; align-items:center; gap:10px;
+    box-shadow:0 12px 28px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08);
+    flex-wrap:wrap; max-width:260px;
+    border:1px solid rgba(212,166,87,.35);
+  }
+  .reel{
+    width:22px; height:22px; border-radius:50%;
+    border:3px solid var(--gold); border-top-color:transparent;
+    animation:spin 1.4s linear infinite; animation-play-state:paused;
+    position:relative;
+  }
+  .reel::after{ content:""; position:absolute; inset:6px; border-radius:50%; background:var(--gold); opacity:.5; }
+  .player.playing .reel{ animation-play-state:running; }
+  .player button{
+    background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.25);
+    color:var(--paper); border-radius:20px; font-size:11px; padding:6px 11px;
+    cursor:pointer; font-family:'Space Mono',monospace; transition:.2s;
+  }
+  .player button:hover{ background:rgba(212,166,87,.35); border-color:var(--gold); }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .cover{
+    min-height:100vh; width:100%;
+    display:flex; align-items:center; justify-content:center;
+    position:relative; text-align:center; padding:40px 20px;
+    background:linear-gradient(170deg, #f3d9c4 0%, var(--paper) 55%);
+    overflow:hidden;
+  }
+  .cover-glow{
+    position:absolute; width:520px; height:520px; border-radius:50%;
+    background:radial-gradient(circle, rgba(255,224,138,.35), transparent 68%);
+    top:50%; left:50%; transform:translate(-50%,-55%);
+    animation:pulse 5s ease-in-out infinite;
+  }
+  @keyframes pulse{ 0%,100%{ opacity:.6; transform:translate(-50%,-55%) scale(1);} 50%{ opacity:1; transform:translate(-50%,-55%) scale(1.08);} }
+
+  .book-stack{ position:relative; width:min(440px,86vw); }
+  .book-shadow-card{
+    position:absolute; inset:14px -6px -6px 6px;
+    background:var(--paper-edge); border-radius:6px 14px 14px 6px;
+    transform:rotate(2.5deg);
+  }
+  .book-shadow-card.two{ inset:22px -10px -10px 10px; background:#e3d0b6; transform:rotate(-2deg); }
+
+  .book{
+    width:100%;
+    background:var(--paper-2);
+    border-radius:6px 14px 14px 6px;
+    box-shadow:0 30px 60px rgba(74,46,53,.32), inset -6px 0 0 rgba(0,0,0,.06);
+    padding:56px 36px 60px;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:transform 1s cubic-bezier(.6,.2,.2,1), opacity 1s ease;
+  }
+  .book::before{
+    content:""; position:absolute; inset:10px;
+    border:1.5px solid rgba(74,46,53,.25); border-radius:4px 10px 10px 4px;
+    pointer-events:none;
+  }
+  .book::after{
+    content:""; position:absolute; top:0; right:0; width:34px; height:34px;
+    background:linear-gradient(135deg, transparent 50%, rgba(74,46,53,.12) 51%);
+    border-radius:0 14px 0 0;
+  }
+  .book.opened{ transform:rotateY(-25deg) scale(.9); opacity:0; }
+
+  .ribbon{
+    position:absolute; top:-10px; left:50%; transform:translateX(-50%);
+    width:28px; height:76px; background:linear-gradient(180deg,var(--rose),var(--rose-deep));
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+  }
+  .cover-flourish{ width:120px; height:20px; margin:0 auto 6px; opacity:.55; }
+  .cover .eyebrow{ color:var(--sage-deep); font-size:13px; text-transform:uppercase; letter-spacing:.18em; }
+  .cover h1{
+    font-size:clamp(38px,7vw,58px); color:var(--rose-deep); margin:14px 0 4px;
+    font-style:italic; font-weight:600; letter-spacing:.01em;
+  }
+  .cover .date{ display:block; margin-bottom:8px; font-size:22px; color:var(--gold-deep); }
+  .cover .underline{ width:150px; height:10px; margin:0 auto 20px; opacity:.7; }
+  .cover p{ font-size:16px; color:#7a5c60; margin-bottom:28px; line-height:1.6; }
+  .cta{
+    background:linear-gradient(160deg,var(--rose),var(--rose-deep)); color:#fff; border:none;
+    padding:14px 32px; border-radius:30px; font-size:15px; cursor:pointer;
+    box-shadow:0 10px 22px rgba(200,92,119,.45), inset 0 1px 0 rgba(255,255,255,.3);
+    transition:.3s; font-family:'Karla',sans-serif; font-weight:700;
+    position:relative;
+  }
+  .cta:hover{ transform:translateY(-3px); box-shadow:0 14px 26px rgba(200,92,119,.55); }
+  .scroll-cue{ margin-top:28px; font-family:'Caveat',cursive; font-size:16px; color:#a17e83; animation:bobtext 2.2s ease-in-out infinite; }
+  @keyframes bobtext{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(6px);} }
+
+  .page{
+    min-height:100vh; width:100%;
+    display:flex; align-items:center; justify-content:center;
+    padding:100px 20px; position:relative; z-index:1;
+  }
+  .page:nth-child(odd){ background:transparent; }
+  .page:nth-child(even){ background:rgba(246,233,220,.55); }
+
+  .leaf{
+    max-width:900px; width:100%;
+    background:var(--paper);
+    border-radius:4px;
+    box-shadow:0 24px 50px rgba(74,46,53,.18), 0 2px 0 rgba(74,46,53,.06);
+    padding:64px 54px 58px;
+    position:relative;
+    opacity:0; transform:translateY(60px) rotate(-1deg);
+    transition:opacity 1s ease, transform 1s ease;
+  }
+  .leaf.show{ opacity:1; transform:translateY(0) rotate(-.4deg); }
+
+  .leaf::after{
+    content:""; position:absolute; right:0; bottom:0; width:34px; height:34px;
+    background:linear-gradient(135deg, var(--paper-edge) 50%, transparent 51%);
+    border-radius:0 0 4px 0;
+    box-shadow:-2px -2px 6px rgba(74,46,53,.12);
+  }
+
+  .tape{ position:absolute; top:-14px; width:92px; height:32px; background:var(--tape); box-shadow:0 2px 4px rgba(0,0,0,.15); }
+  .tape::before{ content:""; position:absolute; inset:0; background:repeating-linear-gradient(90deg, rgba(255,255,255,.25) 0 3px, transparent 3px 7px); }
+  .tape.l{ left:44px; transform:rotate(-6deg); }
+  .tape.r{ right:44px; transform:rotate(5deg); }
+
+  .page-number{
+    position:absolute; bottom:20px; right:28px;
+    font-family:'Caveat',cursive; font-size:17px; color:#b89a8f;
+  }
+
+  .eyebrow{ color:var(--sage-deep); font-size:13px; text-transform:uppercase; letter-spacing:.16em; margin-bottom:6px; display:flex; align-items:center; gap:8px; }
+  .eyebrow::before{ content:""; width:20px; height:1px; background:var(--sage-deep); opacity:.6; }
+  .leaf h2{ font-size:clamp(30px,4.2vw,42px); color:var(--rose-deep); margin-bottom:6px; }
+  .leaf .sub{ font-family:'Caveat',cursive; font-size:25px; color:var(--sage-deep); margin-bottom:8px; }
+  .divider{ width:130px; height:16px; margin:8px 0 26px; opacity:.7; }
+  .leaf p.body-text{ font-size:17px; line-height:1.75; color:var(--ink); }
+
+  .polaroids{ display:flex; flex-wrap:wrap; gap:28px; margin:30px 0; justify-content:center; }
+  .polaroid{
+    background:#fffefb; padding:12px 12px 36px;
+    box-shadow:0 14px 26px rgba(0,0,0,.2);
+    width:196px; transition:transform .4s, box-shadow .4s;
+    position:relative;
+  }
+  .polaroid::before{
+    content:""; position:absolute; top:-10px; left:50%; transform:translateX(-50%) rotate(var(--pin-rot,0deg));
+    width:36px; height:14px; background:var(--tape); box-shadow:0 2px 3px rgba(0,0,0,.15);
+  }
+  .polaroid:nth-child(1){ transform:rotate(-4deg); --pin-rot:-6deg; }
+  .polaroid:nth-child(2){ transform:rotate(3deg); --pin-rot:4deg; }
+  .polaroid:nth-child(3){ transform:rotate(-2deg); --pin-rot:-3deg; }
+  .polaroid:hover{ transform:scale(1.08) rotate(0deg) !important; z-index:5; box-shadow:0 20px 36px rgba(0,0,0,.28); }
+  .polaroid .frame{
+    width:100%; aspect-ratio:1/1; overflow:hidden; position:relative;
+    background:linear-gradient(135deg,var(--fc1,#f1e0d4),var(--fc2,#e3cdbd));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .polaroid img{ width:100%; height:100%; object-fit:contain; display:block; }
+  .polaroid .cap{ font-family:'Caveat',cursive; font-size:19px; text-align:center; margin-top:9px; color:var(--plum); }
+
+  .ph-illustration{ width:56%; height:56%; opacity:.55; }
+  .ph-caption{ position:absolute; bottom:8px; left:0; right:0; text-align:center; font-family:'Space Mono',monospace; font-size:9px; letter-spacing:.05em; color:rgba(74,46,53,.45); }
+
+  .feature-photo{
+    width:min(440px,92%); margin:22px auto 0; padding:16px 16px 44px; background:#fffefb;
+    box-shadow:0 18px 34px rgba(0,0,0,.22); transform:rotate(-2deg); position:relative;
+  }
+  .feature-photo::before{
+    content:""; position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(-4deg);
+    width:70px; height:22px; background:var(--tape); box-shadow:0 2px 3px rgba(0,0,0,.15);
+  }
+  .feature-photo .frame{
+    aspect-ratio:4/3; position:relative;
+    background:linear-gradient(135deg,var(--fc1,#dcecd8),var(--fc2,#eef6ea));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .feature-photo img{ width:100%; height:100%; object-fit:contain; }
+  .feature-photo .cap{ font-family:'Caveat',cursive; font-size:21px; text-align:center; margin-top:12px; }
+
+  .video-grid{ display:flex; flex-wrap:wrap; gap:26px; margin:26px 0; justify-content:center; }
+  .video-card{ width:236px; background:#fffefb; padding:11px 11px 32px; box-shadow:0 14px 26px rgba(0,0,0,.2); transform:rotate(-2deg); position:relative; }
+  .video-card::before{
+    content:"▸ play"; position:absolute; top:-11px; left:14px; font-family:'Space Mono',monospace; font-size:9px;
+    background:var(--plum); color:var(--paper); padding:3px 8px; border-radius:3px; letter-spacing:.06em;
+  }
+  .video-card:nth-child(2){ transform:rotate(2deg); }
+  .video-card:nth-child(3){ transform:rotate(-1deg); }
+  .video-card video{ width:100%; aspect-ratio:4/3; background:#2b1c1f; display:block; border-radius:2px; }
+  .video-card .cap{ font-family:'Caveat',cursive; font-size:19px; text-align:center; margin-top:9px; color:var(--plum); }
+
+  .filmstrip-wrap{
+    overflow:hidden; margin-top:32px; padding:16px 0;
+    background:linear-gradient(160deg,#5a373f,var(--plum)); border-radius:10px;
+    box-shadow:inset 0 0 30px rgba(0,0,0,.4);
+    position:relative;
+  }
+  .filmstrip-wrap::before, .filmstrip-wrap::after{
+    content:""; position:absolute; top:0; bottom:0; width:60px; z-index:2; pointer-events:none;
+  }
+  .filmstrip-wrap::before{ left:0; background:linear-gradient(90deg, var(--plum), transparent); }
+  .filmstrip-wrap::after{ right:0; background:linear-gradient(-90deg, var(--plum), transparent); }
+  .filmstrip{ display:flex; gap:18px; width:max-content; animation:reel 26s linear infinite; padding:0 18px; }
+  .filmstrip-wrap:hover .filmstrip{ animation-play-state:paused; }
+  .filmstrip .frame{
+    width:168px; height:168px; border-radius:6px; overflow:hidden; position:relative;
+    box-shadow:inset 0 0 0 4px #fff, 0 6px 16px rgba(0,0,0,.45);
+    background:linear-gradient(135deg,var(--fc1,#f1cdd8),var(--fc2,#f7e1e8));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .filmstrip .frame img{ width:100%; height:100%; object-fit:cover; }
+  @keyframes reel{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  .finale{ background:linear-gradient(165deg, var(--rose), var(--rose-deep) 70%); color:#fff; text-align:center; }
+  .finale .leaf{ background:rgba(255,255,255,.1); backdrop-filter:blur(8px); box-shadow:0 24px 60px rgba(74,46,53,.35); }
+  .finale .leaf::after{ display:none; }
+  .finale h2{ color:#fff5f2; }
+  .finale .sub{ color:#ffe4ea; }
+  .finale p.body-text{ color:#fff0f2; margin:0 auto 30px; }
+  .finale .eyebrow{ color:#ffe08a; }
+  .finale .eyebrow::before{ background:#ffe08a; }
+
+  .cake{ position:relative; width:130px; height:118px; margin:8px auto 0; }
+  .cake-base{ position:absolute; bottom:0; left:0; width:100%; height:58px; background:repeating-linear-gradient(90deg,#fff 0 12px,#ffe3ea 12px 24px); border-radius:6px; box-shadow:0 8px 18px rgba(0,0,0,.22); }
+  .cake-mid{ position:absolute; bottom:52px; left:8%; width:84%; height:34px; background:repeating-linear-gradient(90deg,#fff 0 10px,#ffd7e2 10px 20px); border-radius:6px; box-shadow:0 6px 12px rgba(0,0,0,.16); }
+  .cake-top{ position:absolute; bottom:82px; left:20%; width:60%; height:20px; background:#fff; border-radius:40% 40% 8px 8px; box-shadow:0 4px 8px rgba(0,0,0,.12); }
+  .cake-candle{ position:absolute; bottom:100px; left:50%; width:6px; height:24px; background:var(--gold); transform:translateX(-50%); border-radius:2px; }
+  .cake-flame{ position:absolute; bottom:122px; left:50%; width:10px; height:14px; background:radial-gradient(circle,#ffe08a,#ff9d3d 70%); border-radius:50% 50% 50% 50%/65% 65% 35% 35%; transform:translateX(-50%); animation:flicker 1.4s ease-in-out infinite; }
+  @keyframes flicker{ 0%,100%{ transform:translateX(-50%) scale(1);} 50%{ transform:translateX(-50%) scale(.85) rotate(-4deg);} }
+
+  .envelope-wrap{ display:flex; justify-content:center; margin:26px 0 10px; perspective:1200px; }
+  .envelope{ width:290px; height:196px; position:relative; cursor:pointer; filter:drop-shadow(0 14px 20px rgba(0,0,0,.25)); }
+  .env-body{ position:absolute; inset:0; background:#fff5f7; border-radius:6px; z-index:1; }
+  .env-flap{
+    position:absolute; top:0; left:0; width:100%; height:100%;
+    clip-path:polygon(0 0,100% 0,50% 55%); background:#ffd9e2;
+    transform-origin:top; transition:transform .8s cubic-bezier(.6,.2,.2,1), z-index 0s .4s;
+    border-radius:6px 6px 0 0; backface-visibility:hidden; z-index:3;
+  }
+  .envelope.open .env-flap{ transform:rotateX(180deg); z-index:0; }
+  .env-seal{
+    position:absolute; top:38%; left:50%; transform:translate(-50%,-50%);
+    width:36px; height:36px; background:radial-gradient(circle at 35% 30%,#ffe2a8,var(--gold) 60%,var(--gold-deep));
+    border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px;
+    box-shadow:0 3px 8px rgba(0,0,0,.3); z-index:4;
+  }
+  .envelope.open .env-seal{ opacity:0; transition:opacity .3s; }
+  .hint{ font-size:13px; opacity:.9; margin-top:16px; font-family:'Space Mono',monospace; }
+
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(30,15,18,.6); backdrop-filter:blur(5px);
+    z-index:9999; display:flex; align-items:center; justify-content:center;
+    opacity:0; pointer-events:none; transition:opacity .5s ease; padding:20px;
+  }
+  .modal-overlay.open{ opacity:1; pointer-events:auto; }
+  .modal-box{
+    max-width:560px; width:100%; background:#fffaf5; border-radius:22px;
+    padding:38px 36px 42px; box-shadow:0 40px 90px rgba(0,0,0,.45);
+    transform:scale(.92) translateY(20px); transition:transform .5s cubic-bezier(.6,.2,.2,1);
+    position:relative; font-family:'Caveat',cursive; font-size:21px; line-height:1.5; color:var(--plum);
+  }
+  .modal-box::before{
+    content:""; position:absolute; top:-10px; left:50%; transform:translateX(-50%) rotate(-3deg);
+    width:80px; height:26px; background:var(--tape);
+  }
+  .modal-overlay.open .modal-box{ transform:scale(1) translateY(0); }
+  .modal-box .close-btn{
+    position:absolute; top:14px; right:18px; font-size:26px; background:none; border:none;
+    cursor:pointer; color:var(--rose-deep); font-family:'Karla',sans-serif; opacity:.6; transition:.2s;
+  }
+  .modal-box .close-btn:hover{ opacity:1; transform:scale(1.1); }
+  .modal-box .letter-content{ margin-top:10px; }
+  .modal-box .letter-content p{ margin-bottom:12px; }
+  .modal-box .letter-content .signoff{ margin-top:12px; font-weight:600; color:var(--rose-deep); }
+
+  @media(max-width:768px){ .modal-box{ padding:28px 22px 32px; font-size:18px; max-width:92%; } }
+
+  .bunting-strip{ position:fixed; top:0; left:0; width:100%; height:34px; z-index:850; pointer-events:none; }
+  .bunting-strip .string{ position:absolute; top:6px; left:0; width:100%; height:2px; background:repeating-linear-gradient(90deg, rgba(74,46,53,.4) 0 8px, transparent 8px 14px); }
+  .flag{ position:absolute; top:6px; width:20px; height:24px; clip-path:polygon(0 0,100% 0,50% 100%); transform-origin:top center; animation:sway 2.8s ease-in-out infinite; }
+  @keyframes sway{ 0%,100%{ transform:rotate(-6deg);} 50%{ transform:rotate(6deg);} }
+
+  .side-decor{ position:fixed; inset:0; pointer-events:none; z-index:4; overflow:hidden; }
+  .balloon{ position:absolute; width:44px; height:56px; border-radius:50% 50% 50% 50%/45% 45% 55% 55%; box-shadow:inset -6px -6px 10px rgba(0,0,0,.12), inset 6px 6px 10px rgba(255,255,255,.3); animation:bob 5.5s ease-in-out infinite; }
+  .balloon::before{ content:""; position:absolute; left:50%; top:100%; width:0; height:0; transform:translateX(-50%); border-left:5px solid transparent; border-right:5px solid transparent; border-top:6px solid inherit; }
+  .balloon::after{ content:""; position:absolute; left:50%; top:100%; width:1px; height:70px; background:rgba(74,46,53,.3); transform:translateX(-50%); }
+  .balloon.b1{ left:1.5%; top:10%; background:var(--rose); }
+  .balloon.b2{ left:4%; top:46%; background:var(--gold); width:36px; height:46px; animation-delay:1.1s; }
+  .balloon.b3{ left:2%; top:80%; background:var(--sage); animation-delay:.5s; }
+  .balloon.b4{ right:1.5%; top:16%; background:var(--sage); animation-delay:.8s; }
+  .balloon.b5{ right:4%; top:50%; background:var(--rose); width:36px; height:46px; animation-delay:.2s; }
+  .balloon.b6{ right:2%; top:84%; background:var(--gold); animation-delay:1.4s; }
+  @keyframes bob{ 0%,100%{ transform:translateY(0) rotate(-3deg);} 50%{ transform:translateY(-20px) rotate(3deg);} }
+
+  .floating-heart{ position:fixed; bottom:-40px; pointer-events:none; z-index:3; animation-name:floatUp; animation-timing-function:linear; animation-iteration-count:infinite; }
+  @keyframes floatUp{ 0%{ transform:translateY(0) rotate(0deg); opacity:0;} 8%{opacity:.85;} 88%{opacity:.85;} 100%{ transform:translateY(-115vh) rotate(25deg); opacity:0;} }
+
+  .wish-tag{
+    position:fixed; z-index:5; background:#fffaf3; color:var(--plum); font-family:'Caveat',cursive; font-size:16px;
+    padding:7px 14px; border-radius:3px; box-shadow:0 6px 14px rgba(0,0,0,.16);
+    animation:sway 3.2s ease-in-out infinite; transform-origin:top center;
+  }
+  .wish-tag::before{ content:""; position:absolute; top:-16px; left:50%; width:1px; height:16px; background:rgba(74,46,53,.35); transform:translateX(-50%); }
+  .wish-tag.w1{ left:6.5%; top:28%; } .wish-tag.w2{ right:7%; top:32%; animation-delay:.7s; }
+  .wish-tag.w3{ left:8%; top:64%; animation-delay:1.3s; } .wish-tag.w4{ right:8.5%; top:68%; animation-delay:.4s; }
+
+  @media(max-width:768px){ .floating-heart, .wish-tag{ display:none; } }
+  @media(max-width:768px){
+    .leaf{ padding:44px 24px 40px; }
+    .polaroid{ width:132px; }
+    .filmstrip .frame{ width:112px; height:112px; }
+    .side-decor, .bunting-strip{ display:none; }
+    .envelope{ width:230px; height:164px; }
+    .book{ padding:48px 26px 52px; }
+  }
+  @media(prefers-reduced-motion: reduce){ *{ animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+  body.intro-active{ overflow:hidden; height:100vh; }
+  .intro-overlay{
+    position:fixed; inset:0; z-index:99999;
+    background:
+      radial-gradient(circle at 50% 30%, rgba(255,224,138,.12), transparent 55%),
+      linear-gradient(160deg,#5a373f,var(--plum) 60%,#3a232a);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--paper); text-align:center; padding:20px;
+    transition:opacity .9s ease, visibility .9s ease;
+    overflow:hidden;
+  }
+  .intro-overlay.hide{ opacity:0; visibility:hidden; pointer-events:none; }
+  .intro-stage{
+    display:flex; flex-direction:column; align-items:center;
+    transition:opacity .55s ease, transform .55s cubic-bezier(.3,.7,.3,1);
+  }
+  .intro-stage.stage-out{ opacity:0; transform:translateY(-18px) scale(.94); }
+  .intro-stage.stage-in{ opacity:1; transform:translateY(0) scale(1); }
+  .intro-stage.stage-pending{ opacity:0; transform:translateY(18px) scale(.94); }
+
+  .intro-particle{
+    position:absolute; pointer-events:none; color:rgba(255,224,138,.55);
+    animation:introDrift linear infinite;
+  }
+  @keyframes introDrift{
+    0%{ transform:translateY(0) rotate(0deg); opacity:0; }
+    10%{ opacity:.8; }
+    90%{ opacity:.8; }
+    100%{ transform:translateY(-90vh) rotate(180deg); opacity:0; }
+  }
+
+  .intro-eyebrow{ font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; opacity:.9; }
+
+  /* ============ Tap-to-begin gate (this is the real user gesture browsers require before any audio can be audible) ============ */
+  .tap-start{
+    position:absolute; inset:0; z-index:200;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    background:rgba(58,35,42,.55); backdrop-filter:blur(3px);
+    cursor:pointer; text-align:center; padding:20px;
+    transition:opacity .5s ease, visibility .5s ease;
+  }
+  .tap-start.hide{ opacity:0; visibility:hidden; pointer-events:none; }
+  .tap-start-icon{ font-size:52px; margin-bottom:14px; animation:bobtext 1.6s ease-in-out infinite; }
+  .tap-start-text{ font-family:'Caveat',cursive; font-size:30px; color:#fff; }
+  .tap-start-sub{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.1em; color:#ffe4ea; margin-top:10px; opacity:.85; text-transform:uppercase; }
+
+  .celebrate-stage{ position:relative; width:min(92vw,480px); min-height:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .celebrate-bg-pulse{
+    position:absolute; inset:-40px; z-index:-1; border-radius:50%;
+    background:radial-gradient(circle, rgba(255,224,138,.28), transparent 65%);
+    animation:celebratePulse 1.6s ease-in-out infinite;
+  }
+  @keyframes celebratePulse{ 0%,100%{ transform:scale(.9); opacity:.6; } 50%{ transform:scale(1.15); opacity:1; } }
+
+  .word-pop-line{ display:flex; flex-wrap:wrap; justify-content:center; gap:.35em; margin-bottom:6px; }
+  .word-pop{
+    display:inline-block; font-family:'Fraunces',serif; font-weight:700; font-style:italic;
+    font-size:clamp(28px,7vw,52px); opacity:0; transform:scale(.3) rotate(-8deg);
+    animation:wordPop .6s cubic-bezier(.2,1.8,.4,1) forwards;
+    text-shadow:0 6px 18px rgba(0,0,0,.35);
+  }
+  @keyframes wordPop{
+    0%{ opacity:0; transform:scale(.3) rotate(-8deg); }
+    60%{ opacity:1; transform:scale(1.15) rotate(3deg); }
+    100%{ opacity:1; transform:scale(1) rotate(0deg); }
+  }
+  .word-pop.c1{ color:#ffe08a; } .word-pop.c2{ color:#ff9fb3; } .word-pop.c3{ color:#a8e0b0; } .word-pop.c4{ color:#fff; }
+
+  .celebrate-emoji-row{ margin-top:16px; font-size:clamp(26px,6vw,40px); opacity:0; animation:wordPop .6s cubic-bezier(.2,1.8,.4,1) forwards; }
+
+  .celeb-balloon{
+    position:absolute; bottom:-60px; width:38px; height:48px;
+    border-radius:50% 50% 50% 50%/45% 45% 55% 55%;
+    box-shadow:inset -5px -5px 8px rgba(0,0,0,.15), inset 5px 5px 8px rgba(255,255,255,.3);
+    animation:celebRise linear forwards;
+  }
+  @keyframes celebRise{ 0%{ transform:translateY(0) rotate(-4deg); opacity:0; } 10%{ opacity:.95; } 100%{ transform:translateY(-340px) rotate(4deg); opacity:0; } }
+
+  .celeb-confetti{ position:absolute; top:-20px; pointer-events:none; animation:celebFall linear forwards; }
+  @keyframes celebFall{ 0%{ transform:translateY(0) rotate(0deg); opacity:1; } 100%{ transform:translateY(340px) rotate(360deg); opacity:.2; } }
+
+  .age-card-wrap{ position:relative; }
+  .age-label{
+    display:inline-block; font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.25em;
+    text-transform:uppercase; color:var(--plum); background:var(--gold);
+    padding:4px 12px; border-radius:20px; margin-bottom:14px;
+    box-shadow:0 4px 10px rgba(0,0,0,.25);
+  }
+  .age-card{
+    position:relative; width:clamp(140px,32vw,220px); height:clamp(120px,26vw,180px);
+    background:linear-gradient(180deg,#fffaf3,#f3e4cf);
+    border-radius:18px; overflow:hidden;
+    box-shadow:0 24px 50px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.6);
+  }
+  .age-card::before{
+    content:""; position:absolute; top:50%; left:0; width:100%; height:2px;
+    background:rgba(74,46,53,.18); transform:translateY(-50%); z-index:3;
+  }
+  .age-card::after{
+    content:""; position:absolute; inset:0; border-radius:18px; z-index:2; pointer-events:none;
+    background:linear-gradient(180deg, rgba(0,0,0,.06), transparent 12%, transparent 88%, rgba(0,0,0,.1));
+  }
+  .age-counter{
+    font-family:'Fraunces',serif; font-weight:600; font-size:clamp(64px,16vw,110px);
+    line-height:1; color:var(--plum);
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    text-shadow:0 2px 0 rgba(255,255,255,.4);
+  }
+  .age-counter.flip{ animation:ageFlip .65s cubic-bezier(.5,.1,.4,1); }
+  @keyframes ageFlip{
+    0%{ transform:rotateX(0deg); opacity:1; }
+    45%{ transform:rotateX(96deg); opacity:.3; }
+    55%{ transform:rotateX(-96deg); opacity:.3; }
+    100%{ transform:rotateX(0deg); opacity:1; }
+  }
+  .age-sparkle{
+    position:absolute; font-size:16px; color:var(--gold); pointer-events:none;
+    animation:ageSparkle .9s ease-out forwards;
+  }
+  @keyframes ageSparkle{
+    0%{ opacity:0; transform:translate(0,0) scale(.4) rotate(0deg); }
+    30%{ opacity:1; }
+    100%{ opacity:0; transform:translate(var(--sx,0),var(--sy,-40px)) scale(1.1) rotate(180deg); }
+  }
+  .intro-caption{ margin-top:18px; font-family:'Caveat',cursive; font-size:22px; color:#f1d9c8; }
+
+  .intro-hbd{
+    font-size:clamp(30px,6vw,46px); color:#fff; margin-bottom:8px;
+    font-style:italic; text-shadow:0 6px 20px rgba(0,0,0,.35);
+  }
+  .intro-sub{ font-family:'Caveat',cursive; font-size:20px; color:#ffe4ea; margin-bottom:8px; }
+
+  .cake-cut-stage{ position:relative; width:200px; height:196px; margin:26px auto 4px; cursor:pointer; }
+
+  .cc-plate{
+    position:absolute; bottom:6px; left:50%; transform:translateX(-50%);
+    width:180px; height:26px; border-radius:50%;
+    background:radial-gradient(ellipse at 50% 30%, #fff, #e7dccb 75%);
+    box-shadow:0 10px 18px rgba(0,0,0,.35), inset 0 -2px 4px rgba(0,0,0,.08);
+  }
+
+  .cake-twinkle{ position:absolute; font-size:14px; color:#ffe6a0; animation:twinkle 1.8s ease-in-out infinite; transition:opacity .4s ease; }
+  @keyframes twinkle{ 0%,100%{ opacity:.25; transform:scale(.8);} 50%{ opacity:1; transform:scale(1.15);} }
+  .cake-cut-stage.cut .cake-twinkle{ opacity:0; }
+
+  .cc-half{ position:absolute; top:0; width:100px; height:168px; overflow:hidden; transition:transform .7s cubic-bezier(.6,.1,.3,1); }
+  .cc-half.left{ left:0; }
+  .cc-half.right{ right:0; }
+  .cc-inner{ position:absolute; top:0; width:200px; height:168px; }
+  .cc-half.left .cc-inner{ left:0; }
+  .cc-half.right .cc-inner{ right:0; }
+  .cake-cut-stage.cut .cc-half.left{ transform:translate(-34px,8px) rotate(-6deg); }
+  .cake-cut-stage.cut .cc-half.right{ transform:translate(34px,8px) rotate(6deg); }
+
+  .cc-base{ position:absolute; bottom:0; left:0; width:100%; height:66px; background:repeating-linear-gradient(90deg,#fff 0 12px,#ffe3ea 12px 24px); border-radius:6px; box-shadow:0 8px 18px rgba(0,0,0,.22); }
+  .cc-mid{ position:absolute; bottom:60px; left:8%; width:84%; height:38px; background:repeating-linear-gradient(90deg,#fff 0 10px,#ffd7e2 10px 20px); border-radius:6px; box-shadow:0 6px 12px rgba(0,0,0,.16); }
+  .cc-top{ position:absolute; bottom:96px; left:20%; width:60%; height:22px; background:#fff; border-radius:40% 40% 8px 8px; box-shadow:0 4px 8px rgba(0,0,0,.12); }
+  .cc-drip{ position:absolute; bottom:92px; width:9px; height:16px; background:#ffd1de; border-radius:0 0 50% 50%; }
+  .cc-drip.d1{ left:26%; } .cc-drip.d2{ left:48%; } .cc-drip.d3{ left:68%; }
+  .cc-candle{ position:absolute; bottom:116px; left:50%; width:6px; height:26px; background:var(--gold); transform:translateX(-50%); border-radius:2px; }
+  .cc-flame{ position:absolute; bottom:140px; left:50%; width:10px; height:14px; background:radial-gradient(circle,#ffe08a,#ff9d3d 70%); border-radius:50%/65% 65% 35% 35%; transform:translateX(-50%); animation:flicker 1.4s ease-in-out infinite; }
+  .cake-cut-stage.cut .cc-flame, .cake-cut-stage.cut .cc-candle{ opacity:0; transition:opacity .3s ease; }
+
+  .cc-smoke{
+    position:absolute; bottom:140px; left:50%; width:5px; height:5px; transform:translateX(-50%);
+    border-radius:50%; background:rgba(230,225,220,0); opacity:0; pointer-events:none;
+  }
+  .cake-cut-stage.cut .cc-smoke{ animation:smokeRise 1.6s ease-out .3s forwards; }
+  @keyframes smokeRise{
+    0%{ opacity:0; background:rgba(230,225,220,.5); transform:translateX(-50%) translateY(0) scale(1); }
+    20%{ opacity:.55; }
+    100%{ opacity:0; background:rgba(230,225,220,.5); transform:translateX(-50%) translateY(-46px) scale(3.2); }
+  }
+
+  .knife{
+    position:absolute; top:-50px; left:50%; transform:translateX(-50%) rotate(18deg);
+    font-size:38px; transition:transform .55s cubic-bezier(.5,0,.4,1), opacity .3s ease .35s;
+    filter:drop-shadow(0 6px 10px rgba(0,0,0,.35));
+  }
+  .knife::after{
+    content:""; position:absolute; top:6px; left:50%; width:2px; height:22px;
+    background:linear-gradient(180deg, rgba(255,255,255,.8), transparent);
+    transform:translateX(-50%) rotate(0deg); opacity:0;
+  }
+  .cake-cut-stage:hover .knife{ transform:translateX(-50%) rotate(10deg) scale(1.06); }
+  .cake-cut-stage.cut .knife{ transform:translateX(-50%) translateY(200px) rotate(18deg); opacity:0; }
+
+  .intro-hint{ margin-top:20px; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.05em; color:#ffe4ea; opacity:.9; animation:bobtext 2s ease-in-out infinite; }
+
+  .bokeh{
+    position:absolute; border-radius:50%; filter:blur(2px);
+    background:radial-gradient(circle at 35% 30%, rgba(255,224,138,.5), rgba(255,224,138,0) 70%);
+    animation:bokehFloat ease-in-out infinite;
+    pointer-events:none;
+  }
+  @keyframes bokehFloat{
+    0%,100%{ transform:translateY(0) scale(1); opacity:.5; }
+    50%{ transform:translateY(-26px) scale(1.15); opacity:.85; }
+  }
+
+  .tilt-wrap{ perspective:900px; }
+  .tilt-target{ transition:transform .25s ease-out; transform-style:preserve-3d; }
+
+  .cake-glow-ring{
+    position:absolute; left:50%; top:60%; transform:translate(-50%,-50%);
+    width:170px; height:170px; border-radius:50%;
+    background:radial-gradient(circle, rgba(255,224,138,.35), transparent 68%);
+    animation:ringBreathe 2.6s ease-in-out infinite; pointer-events:none;
+  }
+  @keyframes ringBreathe{ 0%,100%{ opacity:.5; transform:translate(-50%,-50%) scale(.92);} 50%{ opacity:.9; transform:translate(-50%,-50%) scale(1.08);} }
+  .cake-cut-stage.cut ~ .cake-glow-ring, .cake-cut-stage.cut .cake-glow-ring{ animation-play-state:paused; opacity:0; transition:opacity .5s ease; }
+
+  .intro-hbd .ch{
+    display:inline-block; opacity:0; transform:translateY(-16px);
+    animation:letterBounce .6s cubic-bezier(.28,1.6,.5,1) forwards;
+  }
+  @keyframes letterBounce{ to{ opacity:1; transform:translateY(0); } }
+
+  .progress-rail{ position:fixed; top:0; left:0; width:100%; height:3px; z-index:920; background:rgba(74,46,53,.08); }
+  .progress-fill{ height:100%; width:0%; background:linear-gradient(90deg,var(--gold),var(--rose-deep)); box-shadow:0 0 8px rgba(212,166,87,.5); transition:width .1s linear; }
+
+  .cover::before{
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:1;
+    box-shadow:inset 0 0 140px rgba(74,46,53,.22);
+  }
+
+  .cover h1{ display:inline-flex; }
+  .cover h1 .ch{
+    display:inline-block; opacity:0; transform:translateY(22px) rotate(4deg);
+    animation:letterUp .7s cubic-bezier(.2,.7,.3,1) forwards;
+  }
+  @keyframes letterUp{ to{ opacity:1; transform:translateY(0) rotate(0deg); } }
+
+  .corner-flourish{ position:absolute; width:46px; height:46px; opacity:.55; pointer-events:none; }
+  .corner-flourish.tl{ top:16px; left:16px; }
+  .corner-flourish.br{ bottom:16px; right:16px; transform:rotate(180deg); }
+  .finale .corner-flourish{ opacity:.35; }
+
+  .polaroid, .video-card{ opacity:0; transform:translateY(24px) scale(.96); transition:opacity .6s ease, transform .6s ease; }
+  .leaf.show .polaroid, .leaf.show .video-card{ opacity:1; transform:translateY(0) scale(1); }
+  .leaf.show .polaroid:nth-child(1), .leaf.show .video-card:nth-child(1){ transition-delay:.15s; }
+  .leaf.show .polaroid:nth-child(2), .leaf.show .video-card:nth-child(2){ transition-delay:.32s; }
+  .leaf.show .polaroid:nth-child(3), .leaf.show .video-card:nth-child(3){ transition-delay:.49s; }
+  .feature-photo{ opacity:0; transform:translateY(20px) rotate(-2deg) scale(.97); transition:opacity .7s ease, transform .7s ease; }
+  .leaf.show .feature-photo{ opacity:1; transform:translateY(0) rotate(-2deg) scale(1); }
+
+  .leaf.show .polaroid:nth-child(1){ transform:rotate(-4deg); }
+  .leaf.show .polaroid:nth-child(2){ transform:rotate(3deg); }
+  .leaf.show .polaroid:nth-child(3){ transform:rotate(-2deg); }
+
+  .cursor-spark{
+    position:fixed; z-index:850; pointer-events:none; font-size:13px;
+    color:var(--gold-deep); opacity:.9;
+    animation:sparkFade .9s ease-out forwards;
+  }
+  @keyframes sparkFade{ to{ opacity:0; transform:translateY(-16px) scale(.6); } }
+  @media(max-width:768px){ .cursor-spark{ display:none; } }
+  @media(prefers-reduced-motion: reduce){ .cursor-spark{ display:none; } }
+
+  /* ============ Self-Cuteness section ============ */
+  .cute-list{ list-style:none; max-width:560px; margin:26px auto 0; text-align:left; }
+  .cute-list li{
+    font-family:'Caveat',cursive; font-size:22px; color:var(--ink);
+    padding:8px 0 8px 30px; position:relative; border-bottom:1px dashed rgba(74,46,53,.15);
+  }
+  .cute-list li::before{ content:"✿"; position:absolute; left:0; top:8px; color:var(--rose-deep); }
+</style>
 </head>
+<body class="intro-active">
 
-<body>
+<div class="intro-overlay" id="introOverlay">
+  <div class="bokeh" style="width:60px;height:60px;left:12%;top:20%;animation-duration:6s;"></div>
+  <div class="bokeh" style="width:36px;height:36px;left:82%;top:30%;animation-duration:5s;animation-delay:.6s;"></div>
+  <div class="bokeh" style="width:80px;height:80px;left:20%;top:70%;animation-duration:7.5s;animation-delay:1.1s;"></div>
+  <div class="bokeh" style="width:44px;height:44px;left:75%;top:75%;animation-duration:6.5s;animation-delay:.3s;"></div>
+  <div class="bokeh" style="width:26px;height:26px;left:50%;top:12%;animation-duration:5.5s;animation-delay:.9s;"></div>
 
-    <!-- Custom cursor -->
-    <div class="custom-cursor"></div>
+  <div class="tap-start" id="tapStart">
+    <div class="tap-start-icon">🎂</div>
+    <div class="tap-start-text">tap to begin</div>
+    <div class="tap-start-sub">turns the sound on too</div>
+  </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="intro-stage stage-in" id="introStage1">
+    <p class="intro-eyebrow">the clock strikes midnight</p>
+    <div class="tilt-wrap">
+      <div class="age-card-wrap tilt-target" id="ageTiltTarget">
+        <span class="age-label">age</span>
+        <div class="age-card"><div class="age-counter" id="ageCounter">24</div></div>
+      </div>
+    </div>
+    <p class="intro-caption">turning a year older...</p>
+  </div>
 
-    <!-- Advanced Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-art fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#">K.S</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCreative"
-                aria-controls="navCreative" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navCreative">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link resume-link" href="Karthikeyan-Resume.pdf" download><i
-                                class="bi bi-download me-1"></i> Resume</a></li>
-                </ul>
-            </div>
+  <div class="intro-stage stage-pending" id="introStage2" style="display:none;">
+    <div class="celebrate-stage" id="celebrateStage">
+      <div class="celebrate-bg-pulse"></div>
+      <p class="intro-eyebrow">✿ 01 August ✿</p>
+      <div class="word-pop-line">
+        <span class="word-pop c1" id="wp1" style="animation-delay:.05s;">Happy</span>
+        <span class="word-pop c2" id="wp2" style="animation-delay:.3s;">Birthday</span>
+      </div>
+      <div class="word-pop-line">
+        <span class="word-pop c3" id="wp3" style="animation-delay:.6s;">Swetha</span>
+        <span class="word-pop c4" id="wp4" style="animation-delay:.8s;">!</span>
+      </div>
+      <span class="intro-sub" style="opacity:0; animation:wordPop .6s cubic-bezier(.2,1.8,.4,1) forwards; animation-delay:1s;">make a wish, then cut the cake</span>
+      <div class="tilt-wrap">
+      <div class="cake-cut-stage tilt-target" id="cakeCutStage">
+        <div class="cake-glow-ring"></div>
+        <div class="cake-twinkle" style="top:6px; left:8px;">✦</div>
+        <div class="cake-twinkle" style="top:2px; right:10px; animation-delay:.5s;">✦</div>
+        <div class="cake-twinkle" style="top:40px; left:-6px; animation-delay:1s;">✿</div>
+        <div class="cake-twinkle" style="top:36px; right:-8px; animation-delay:.3s;">✿</div>
+        <div class="knife">🔪</div>
+        <div class="cc-plate"></div>
+        <div class="cc-half left">
+          <div class="cc-inner">
+            <div class="cc-smoke"></div>
+            <div class="cc-candle"></div><div class="cc-flame"></div>
+            <div class="cc-top"></div>
+            <div class="cc-drip d1"></div><div class="cc-drip d2"></div>
+            <div class="cc-mid"></div><div class="cc-base"></div>
+          </div>
         </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero-creative py-5">
-            <div class="floating-shape"></div>
-            <div class="container position-relative" style="z-index: 2;">
-                <div class="row align-items-center py-5">
-                    <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="mb-4">
-                            <span class="available-badge">✦ Open to work ✦</span>
-                        </div>
-                        <h1 class="hero-name">
-                            Karthikeyan S<br>
-                            <span class="hero-accent">Web Developer,</span><br>
-                            problem solver.
-                        </h1>
-                        <p class="hero-desc mt-4">
-                            1+ year of experience building modern web applications.
-                            Specialized in React and Java development. Passionate about
-                            creating responsive, scalable, and user-friendly solutions.
-                            Seeking exciting opportunities to grow and contribute.
-                        </p>
-                        <div class="d-flex gap-3 mt-4 flex-wrap">
-                            <a href="#projects" class="btn btn-outline-dark rounded-pill px-4 py-2">
-                                View Projects <i class="bi bi-arrow-right-short"></i>
-                            </a>
-
-                            <a href="Karthikeyan-Resume.pdf" download class="btn-resume rounded-pill px-4 py-2">
-                                <i class="bi bi-file-text me-1"></i> Resume
-                            </a>
-                        </div>
-                        <div class="mt-4 d-flex gap-4 flex-wrap">
-                            <div><i class="bi bi-check-circle-fill" style="color: #d4a373;"></i> Multiple projects
-                                completed</div>
-                            <div><i class="bi bi-trophy-fill" style="color: #d4a373;"></i> 1+ year experience</div>
-                            <div><i class="bi bi-code-slash" style="color: #d4a373;"></i> React & Java Developer</div>
-                        </div>
-                        <!-- Left Bottom Social Links - Matching Color Pattern -->
-                        <div class="hero-social-links">
-                            <a href="https://github.com/yourprofile" target="_blank" class="hero-social-link">
-                                <i class="bi bi-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hero-social-link">
-                                <i class="bi bi-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="mailto:karthikeyan25082000@gmail.com" class="hero-social-link">
-                                <i class="bi bi-envelope-fill"></i>
-                                <span>Email</span>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
-                        <div class="dev-card mx-auto">
-                            <div class="dev-avatar">
-                                <i class="bi bi-person-fill" style="font-size: 3.5rem;"></i>
-                            </div>
-                            <h3 class="mt-3 mb-1">Karthikeyan S</h3>
-                            <p class="text-muted">Web Developer</p>
-                            <div class="tech-stack mt-3">
-                                <span>React</span>
-                                <span>Bootstrap</span>
-                                <span>Java</span>
-                                <span>Spring</span>
-                                <span>MySQL</span>
-                                <span>JavaScript</span>
-                                <span>PHP</span>
-                            </div>
-                            <div class="stats mt-4">
-                                <div>
-                                    <h4>1+</h4>
-                                    <small>Year</small>
-                                </div>
-                                <div>
-                                    <h4>10+</h4>
-                                    <small>Projects</small>
-                                </div>
-                                <div>
-                                    <h4>∞</h4>
-                                    <small>Learning</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me -->
-        <section id="about" class="creative-section py-5">
-            <div class="container py-4">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-5" data-aos="fade-right">
-                        <div class="bg-white rounded-4 p-4 text-center shadow-sm"
-                            style="border-left: 8px solid #d4a373;">
-                            <i class="bi bi-quote display-1 text-secondary opacity-25"></i>
-                            <p class="fs-4 fst-italic">"Every project is an opportunity to learn, improve, and create
-                                something valuable. I believe consistency and curiosity are the keys to becoming a
-                                better developer every day."</p>
-                            <hr class="w-25 mx-auto">
-                            <p class="small text-muted">— Developer Mindset</p>
-                        </div>
-                    </div>
-                    <div class="col-md-7" data-aos="fade-left">
-                        <span class="text-uppercase small tracking-wide text-secondary">— Who I Am</span>
-                        <h2 class="section-title-creative mt-2">About Me</h2>
-                        <p class="lead">I'm a passionate Web Developer with over <strong>1 year of professional
-                                experience </strong> building and
-                            maintaining web applications using <strong> HTML, CSS, Bootstrap, PHP, and MySQL</strong>.
-                            I enjoy creating responsive, user-friendly websites and writing clean, maintainable code
-                            that
-                            delivers a great user experience.
-                        </p>
-                        <p class="text-secondary">Alongside my professional work, I continuously expand my skills by
-                            developing personal projects and exploring modern technologies. Through self-learning and
-                            hands-on projects, I have gained practical experience with <strong> React.js, Java, and
-                                Spring Boot</strong>, strengthening my understanding of full-stack application
-                            development.</p>
-                        <p>I am passionate about learning new technologies, solving real-world problems, and improving
-                            my development skills every day. My goal is to join a forward-thinking team where I can
-                            contribute, grow as a developer, and work on impactful products.</p>
-                        <div class="mt-3 d-flex gap-3 flex-wrap">
-                            <span class="skill-badge-creative">Web Developer</span>
-                            <span class="skill-badge-creative">1+ Year Experience</span>
-                            <span class="skill-badge-creative">Problem Solver</span>
-                            <span class="skill-badge-creative">Immediate Joiner</span>
-                            <span class="skill-badge-creative">Open to Work</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section id="experience" class="creative-section py-5" style="background: #fdf8f2;">
-            <div class="container py-4">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title-creative" style="display: inline-block;">Work Experience</h2>
-                    <p class="text-muted mt-2">professional journey & key achievements</p>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="timeline-creative">
-
-                            <!-- Current Job -->
-                            <div class="exp-item" data-aos="fade-up">
-                                <div class="exp-dot"></div>
-                                <div class="art-card p-4">
-                                    <span class="badge bg-dark text-white mb-2">2025 — Present</span>
-                                    <h3 class="fw-bold">Web Developer · Best Webmasterz</h3>
-                                    <p class="text-muted">Salem, India</p>
-
-                                    <p>
-                                        Working as a Web Developer, developing and maintaining responsive web
-                                        applications
-                                        using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.
-                                        Responsible for building user-friendly interfaces, handling backend integration,
-                                        and ensuring website performance and responsiveness.
-                                    </p>
-
-                                    <div class="d-flex gap-2 flex-wrap mt-2">
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">HTML</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">CSS</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Bootstrap</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">JavaScript</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">PHP</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">MySQL</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Previous / Learning Experience (optional) -->
-                            <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
-                                <div class="exp-dot"></div>
-                                <div class="art-card p-4">
-                                    <span class="badge bg-dark text-white mb-2">Learning Phase</span>
-                                    <h3 class="fw-bold">Self Learning · Personal Projects</h3>
-                                    <p class="text-muted">Java · Spring Boot · React.js</p>
-
-                                    <p>
-                                        Developed personal projects to improve my skills in web development and gain
-                                        hands-on experience with modern development practices and problem solving.
-                                    </p>
-
-                                    <div class="d-flex gap-2 flex-wrap mt-2">
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Java</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Spring Boot</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">React.js</span>
-                                        <span class="skill-badge-creative" style="font-size:0.7rem;">Full Stack
-                                            Practice</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="creative-section py-5" ">
-    <div class=" container py-4">
-
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title-creative">Tech Stack</h2>
-                <p class="text-muted">Technologies I work with & continuously improve</p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Frontend -->
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Frontend</h5>
-                        <p class="text-muted small mb-3">Building responsive and interactive UI</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">HTML5</span>
-                            <span class="skill-badge-creative">CSS3</span>
-                            <span class="skill-badge-creative">JavaScript</span>
-                            <span class="skill-badge-creative">Bootstrap 5</span>
-                            <span class="skill-badge-creative">React.js (Learning)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Backend</h5>
-                        <p class="text-muted small mb-3">Server-side logic & APIs</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">PHP</span>
-                            <span class="skill-badge-creative">MySQL</span>
-                            <span class="skill-badge-creative">Java (Learning)</span>
-                            <span class="skill-badge-creative">Spring Boot (Learning)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Tools</h5>
-                        <p class="text-muted small mb-3">Development & productivity tools</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">Git & GitHub</span>
-                            <span class="skill-badge-creative">VS Code</span>
-                            <span class="skill-badge-creative">Eclipse</span>
-                            <span class="skill-badge-creative">Postman</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="creative-section py-5" style="background: #fff8f2;">
-            <div class="container py-4">
-
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title-creative">Featured Projects</h2>
-                    <p class="text-muted">A selection of real-world and practice applications I've built</p>
-                </div>
-
-                <div class="row g-4">
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                        <div class="project-card p-4 shadow-sm h-100">
-
-                            <!-- IMAGE -->
-                            <div class="project-image mb-3 position-relative">
-
-                                <img src="images/shopkart.jpg" class="img-fluid project-img">
-
-                                <!-- HOVER OVERLAY -->
-                                <div class="image-overlay">
-                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
-                                        data-bs-target="#project1Modal">
-                                        View Details
-                                    </button>
-                                </div>
-
-                                <!-- ICON -->
-                                <div class="image-icon">
-                                    <i class="bi bi-cart-fill"></i>
-                                </div>
-
-                            </div>
-
-                            <span class="project-tag">E-Commerce</span>
-
-                            <h4 class="fw-bold mt-2">Secure Kids E-Commerce Platform</h4>
-
-                            <p class="text-muted small">
-                                Secure kids e-commerce platform with JWT authentication, role-based access control,
-                                and dynamic admin dashboard for real-time product management.
-                            </p>
-
-                            <!-- TECH STACK -->
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="skill-badge-creative">HTML</span>
-                                <span class="skill-badge-creative">CSS</span>
-                                <span class="skill-badge-creative">JavaScript</span>
-                                <span class="skill-badge-creative">PHP</span>
-                                <span class="skill-badge-creative">MySQL</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-card p-4 shadow-sm h-100">
-
-                            <!-- IMAGE -->
-                            <div class="project-image mb-3 position-relative">
-
-                                <img src="images/taskflow.jpg" class="img-fluid project-img">
-
-                                <!-- HOVER OVERLAY -->
-                                <div class="image-overlay">
-                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
-                                        data-bs-target="#project2Modal">
-                                        View Details
-                                    </button>
-                                </div>
-
-                                <!-- ICON -->
-                                <div class="image-icon">
-                                    <i class="bi bi-mortarboard"></i>
-                                </div>
-
-                            </div>
-
-                            <span class="project-tag">School Website</span>
-
-                            <h4 class="fw-bold mt-2">Stenofly – Kids School Website</h4>
-
-                            <p class="text-muted small">
-                                A responsive 6-page mobile-first school website with PHP-powered enquiry system,
-                                server-side validation, and email notification for real-time visitor enquiries.
-                            </p>
-
-                            <!-- TECH STACK -->
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="skill-badge-creative">HTML5</span>
-                                <span class="skill-badge-creative">CSS3</span>
-                                <span class="skill-badge-creative">JavaScript</span>
-                                <span class="skill-badge-creative">Bootstrap 5</span>
-                                <span class="skill-badge-creative">PHP</span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- ================= PROJECT 3 ================= -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-card p-4 shadow-sm h-100">
-
-                            <!-- IMAGE -->
-                            <div class="project-image mb-3 position-relative">
-
-                                <img src="images/portfolio.jpg" class="img-fluid project-img">
-
-                                <!-- HOVER OVERLAY -->
-                                <div class="image-overlay">
-                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
-                                        data-bs-target="#project3Modal">
-                                        View Details
-                                    </button>
-                                </div>
-
-                                <!-- ICON -->
-                                <div class="image-icon">
-                                    <i class="bi bi-collection"></i>
-                                </div>
-
-                            </div>
-
-                            <span class="project-tag">Admin Panel</span>
-
-                            <h4 class="fw-bold mt-2">Dialmia Business Directory</h4>
-
-                            <p class="text-muted small">
-                                Admin-side listing management system for a national business directory, handling
-                                large-scale business data across multiple cities with structured categorization and SEO
-                                optimization.
-                            </p>
-
-                            <!-- TECH STACK -->
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-
-                                <span class="skill-badge-creative">Admin Panel</span>
-                                <span class="skill-badge-creative">Data Management</span>
-                                <span class="skill-badge-creative">Business Listings</span>
-                                <span class="skill-badge-creative">SEO Optimization</span>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- project 4 -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="project-card p-4 shadow-sm h-100">
-
-                            <!-- IMAGE -->
-                            <div class="project-image mb-3 position-relative">
-
-                                <img src="images/portfolio.jpg" class="img-fluid project-img">
-
-                                <!-- HOVER OVERLAY -->
-                                <div class="image-overlay">
-                                    <button class="btn btn-sm btn-light" data-bs-toggle="modal"
-                                        data-bs-target="#project4Modal">
-                                        View Details
-                                    </button>
-                                </div>
-
-                                <!-- ICON -->
-                                <div class="image-icon">
-                                    <i class="bi bi-search"></i>
-                                </div>
-
-                            </div>
-
-                            <span class="project-tag">SEO Optimization</span>
-
-                            <h4 class="fw-bold mt-2">Dialmia Business Directory - SEO Project</h4>
-
-                            <p class="text-muted small">
-                                On-page SEO optimization project focused on improving organic visibility for a
-                                large-scale
-                                business directory through keyword strategy and content optimization.
-                            </p>
-
-                            <!-- TECH STACK / SKILLS -->
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-
-                                <span class="skill-badge-creative">On-Page SEO</span>
-                                <span class="skill-badge-creative">Keyword Research</span>
-                                <span class="skill-badge-creative">Content Optimization</span>
-                                <span class="skill-badge-creative">Meta Tags</span>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= MODAL 1 ================= -->
-        <div class="modal fade" id="project1Modal" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3">
-
-                    <div class="modal-header border-0">
-                        <h5 class="fw-bold">Secure Kids E-Commerce Platform</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
-
-                        <p>
-                            Full-stack secure e-commerce platform built using PHP and MySQL with JWT authentication
-                            and role-based access control.
-                        </p>
-
-                        <h6>Key Features</h6>
-                        <ul>
-                            <li>JWT Authentication System</li>
-                            <li>Role-based Access Control</li>
-                            <li>Dynamic Product Management</li>
-                            <li>Secure Backend (PHP + MySQL)</li>
-                            <li>Responsive UI (Bootstrap 5)</li>
-                        </ul>
-
-                        <h6>Impact</h6>
-                        <p class="text-success">
-                            Reduced manual inventory updates by ~40% and eliminated unauthorized access issues.
-                        </p>
-
-                    </div>
-
-                    <div class="modal-footer border-0">
-                        <a href="#" class="btn btn-dark btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
+        <div class="cc-half right">
+          <div class="cc-inner">
+            <div class="cc-top"></div>
+            <div class="cc-drip d2"></div><div class="cc-drip d3"></div>
+            <div class="cc-mid"></div><div class="cc-base"></div>
+          </div>
         </div>
+      </div>
+      </div>
+      <p class="intro-hint">tap or swipe the cake to cut it</p>
+    </div>
+  </div>
+</div>
 
-        <!-- ================= MODAL 2 ================= -->
-        <div class="modal fade" id="project2Modal" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3">
+<audio id="bgMusic" loop playsinline></audio>
 
-                    <div class="modal-header border-0">
-                        <h5 class="fw-bold">Stenofly – Kids School Website</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
+<div class="player" id="player">
+  <div class="reel"></div>
+  <button onclick="toggleMainSong()" id="musicToggleBtn">🎵 Music</button>
+</div>
 
-                    <div class="modal-body">
+<nav class="pinboard" id="pinboard"></nav>
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
 
-                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
+<div class="bunting-strip" id="bunting"><div class="string"></div></div>
+<div class="side-decor">
+  <div class="balloon b1"></div><div class="balloon b2"></div><div class="balloon b3"></div>
+  <div class="balloon b4"></div><div class="balloon b5"></div><div class="balloon b6"></div>
+  <div class="wish-tag w1">stay wild ✨</div>
+  <div class="wish-tag w2">shine on 🌸</div>
+  <div class="wish-tag w3">blessed always</div>
+  <div class="wish-tag w4">smile more 💫</div>
+</div>
+<div id="heartField"></div>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="cover-glow"></div>
+  <div class="book-stack">
+    <div class="book-shadow-card two"></div>
+    <div class="book-shadow-card"></div>
+    <div class="book" id="book">
+      <div class="ribbon"></div>
+      <svg class="cover-flourish" viewBox="0 0 120 20" fill="none"><path d="M2 10 Q30 -4 60 10 T118 10" stroke="#92A87E" stroke-width="1.4"/><circle cx="60" cy="10" r="2.6" fill="#D4A657"/></svg>
+      <p class="eyebrow" style="justify-content:center;"><span style="display:none"></span>a keepsake, kept since</p>
+      <h1>Swetha</h1>
+      <span class="script date">01 August · 2001</span>
+      <svg class="underline" viewBox="0 0 150 10" fill="none"><path d="M2 6 C 30 -1, 60 11, 90 5 C 110 1, 130 8, 148 4" stroke="#C85C77" stroke-width="2" stroke-linecap="round"/></svg>
+      <p>Twenty-five years, gathered into paper, tape, and a few thousand smiles. Turn the page.</p>
+      <button class="cta" onclick="openBook()">Open the Book 🌸</button>
+      <div class="scroll-cue">✿ scroll to begin ✿</div>
+    </div>
+  </div>
+</section>
+
+<!-- BIRTH -->
+<section class="page" data-chapter="birth" data-label="Birth">
+  <div class="leaf">
+    <div class="tape l"></div><div class="tape r"></div>
+    <p class="eyebrow">page one</p>
+    <h2>The Beginning</h2>
+    <span class="sub">01 August 2001 — where a beautiful story began.</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#D4A657" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#E8879B"/><circle cx="122" cy="8" r="2" fill="#E8879B"/></svg>
+
+    <div class="feature-photo" style="--fc1:#fbe4d2;--fc2:#f3ceb8;">
+      <div class="frame"><img src="images/baby.png" alt="Baby photo" data-fallback="baby"></div>
+      <p class="cap">A tiny smile. A lifetime of memories waiting to happen.</p>
+    </div>
+
+    <p class="body-text" style="margin-top:26px; text-align:center;">
+      <strong>01 August 2001.</strong><br><br>
+      A date that was once just another square on the calendar, until it became the beginning of someone unforgettable.
+      <br><br>
+      A little <strong>angel</strong> arrived, and the world quietly became a little brighter. No one could have known then how much love, laughter, and light she would bring into the lives she touched.
+      <br><br>
+      Years passed, memories were made, dreams grew, and every page that followed became more beautiful than the last.
+      <br><br>
+      This isn't just a birthday gift.
+      <br><br>
+      It's a small reminder that your story is worth celebrating — not just today, but every single day. Every smile you've shared with your family and friends, every challenge you've overcome, and every little moment that makes you <em>you</em> deserves to be remembered.
+      <br><br>
+      May this next chapter bring you even more happiness, peace, adventures, and dreams that come true.
+      <br><br>
+      <strong>Happy Birthday Swetha.</strong> ❤️<br>
+      Here's to your story so far... and to all the beautiful chapters still waiting to be written.
+    </p>
+    <div class="page-number">01</div>
+  </div>
+</section>
+
+<!-- CHILDHOOD -->
+<section class="page" data-chapter="childhood" data-label="Childhood">
+  <div class="leaf">
+    <div class="tape l"></div>
+    <p class="eyebrow">page two</p>
+    <h2>Childhood</h2>
+    <span class="sub">the days when happiness came effortlessly.</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#92A87E" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#D4A657"/><circle cx="122" cy="8" r="2" fill="#D4A657"/></svg>
+
+    <div class="polaroids">
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/child/child-1.jpeg" alt="" data-fallback="camera"></div><div class="cap">a tiny mind full of dreams</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/child/child-2.jpg" alt="" data-fallback="star"></div><div class="cap">a smile that lit up every room</div></div>
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/child3.jpg" alt="" data-fallback="heart"></div><div class="cap">little moments, lifelong memories</div></div>
+    </div>
+
+    <p class="body-text">
+      Some children filled the house with noise. You filled it with happiness. Every little laugh, every playful smile, and every tiny adventure made even the ordinary days feel special. You had a way of turning simple moments into beautiful memories, making every day brighter and every heart a little happier.
+    </p>
+    <div class="page-number">02</div>
+  </div>
+</section>
+
+<!-- SELF CUTENESS -->
+<section class="page" data-chapter="cuteness" data-label="Cuteness">
+  <div class="leaf">
+    <div class="tape l"></div><div class="tape r"></div>
+    <p class="eyebrow">a little extra page</p>
+    <h2>Just... You</h2>
+    <span class="sub">the small, cute things nobody asked you to change</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#E8879B" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#92A87E"/><circle cx="122" cy="8" r="2" fill="#92A87E"/></svg>
+
+    <div class="feature-photo" style="--fc1:#fde3ea;--fc2:#f7cad8;">
+      <div class="frame"><img src="images/self/e-1.jpg" alt="Cute photo" data-fallback="heart"></div>
+      <p class="cap">this exact smile, right here</p>
+    </div>
+
+    <div class="polaroids" style="margin-top:44px;">
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/self/e-2.jpg" alt="" data-fallback="star"></div><div class="cap">Campus moments, endless memories</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/self/e-3.jpg" alt="" data-fallback="camera"></div><div class="cap">Elegance in simplicity</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/self/e-4.jpg" alt="" data-fallback="heart"></div><div class="cap">Trying looks, creating memories</div></div>
+
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/self/e-5.jpg" alt="" data-fallback="star"></div><div class="cap">Just a fun day in class</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/self/e-6.jpg" alt="" data-fallback="camera"></div><div class="cap">Function vibes and happy smiles</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/self/e-7.jpg" alt="" data-fallback="heart"></div><div class="cap">Silent room, shining vibe</div></div>
+    
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/self/e-8.jpg" alt="" data-fallback="star"></div><div class="cap">Just another crazy moment</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/self/e-9.jpg" alt="" data-fallback="camera"></div><div class="cap">Simple pose, happy face</div></div>
+    </div>
+
+    <ul class="cute-list">
+      <li>gets way too excited over small things</li>
+      <li>laughs at your own jokes before finishing them</li>
+      <li>makes everything feel a little less serious</li>
+      <li>remembers the smallest details about people you love</li>
+      <li>somehow still this soft after everything</li>
+    </ul>
+    <div class="page-number">02.5</div>
+  </div>
+</section>
+
+<!-- SCHOOL -->
+<section class="page" data-chapter="school" data-label="School">
+  <div class="leaf">
+    <div class="tape r"></div>
+    <p class="eyebrow">page three</p>
+    <h2>School Days</h2>
+    <span class="sub">the years that shaped the beautiful person you became.</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#C85C77" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#92A87E"/><circle cx="122" cy="8" r="2" fill="#92A87E"/></svg>
+
+    <div class="feature-photo" style="--fc1:#dcecd8;--fc2:#eef6ea;">
+      <div class="frame"><img src="images/school/school-main.png" alt="School photo" data-fallback="school"></div>
+      <p class="cap">a chapter filled with smiles, friendships, and memories</p>
+    </div>
+
+    <div class="polaroids" style="margin-top:44px;">
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/school/image1.png" alt="" data-fallback="camera"></div><div class="cap">Old school days memories</div></div>
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/school/image2.png" alt="" data-fallback="star"></div><div class="cap">Back to school vibes</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/school/image3.png" alt="" data-fallback="heart"></div><div class="cap">Small smile, big memories</div></div>
+
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/school/s-5.jpeg" alt="" data-fallback="camera"></div><div class="cap">One frame, many stories</div></div>
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/school/s-6.jpeg" alt="" data-fallback="star"></div><div class="cap">Same place, different vibes</div></div>
+
+    </div>
+    <div class="page-number">03</div>
+  </div>
+</section>
+
+<!-- COLLEGE -->
+<section class="page" data-chapter="college" data-label="College">
+  <div class="leaf">
+    <div class="tape l"></div><div class="tape r"></div>
+    <p class="eyebrow">page four</p>
+    <h2>College Chapter</h2>
+    <span class="sub">where she became who she is now</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#D4A657" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#C85C77"/><circle cx="122" cy="8" r="2" fill="#C85C77"/></svg>
+
+    <div class="feature-photo" style="--fc1:#e4e9f5;--fc2:#cdd6ec;">
+      <div class="frame"><img src="images/college/college-main.png" alt="College photo" data-fallback="school"></div>
+      <p class="cap">the campus that shaped you</p>
+    </div>
+
+    <div class="polaroids" style="margin-top:44px;">
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-1.jpg" alt="" data-fallback="camera"></div><div class="cap">Two hearts, one beautiful memory</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-2.jpg" alt="" data-fallback="star"></div><div class="cap">Selfie mode: ON</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-3-1.jpg" alt="" data-fallback="heart"></div><div class="cap">No reason, just a selfie</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-3.jpg" alt="" data-fallback="camera"></div><div class="cap">Selfie and good vibes</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-4.jpg" alt="" data-fallback="star"></div><div class="cap">Classroom memories, forever stories</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-5.jpg" alt="" data-fallback="heart"></div><div class="cap">Making moments between classes</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-6.jpg" alt="" data-fallback="camera"></div><div class="cap">Fun with friends</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-7.jpg" alt="" data-fallback="star"></div><div class="cap">Campus life in one frame</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-7-1.jpg" alt="" data-fallback="heart"></div><div class="cap">A special bond, a special moments</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-7-2.jpg" alt="" data-fallback="camera"></div><div class="cap">A random click, a special memory</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-7-4.jpg" alt="" data-fallback="star"></div><div class="cap">Three smiles, one memory</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-8.jpg" alt="" data-fallback="heart"></div><div class="cap">Three hearts, one frame</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-9.jpg" alt="" data-fallback="camera"></div><div class="cap">A proud moment with my favorite person</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-10.jpg" alt="" data-fallback="star"></div><div class="cap">One milestone completed</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-11.jpg" alt="" data-fallback="heart"></div><div class="cap">Cute vibes only!</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-12.jpg" alt="" data-fallback="camera"></div><div class="cap">Making memories, one selfie at a time.</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-13.jpg" alt="" data-fallback="star"></div><div class="cap">Simple moments, priceless memories</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-14.jpg" alt="" data-fallback="heart"></div><div class="cap">Cute smiles and lovely vibes.</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-15.jpg" alt="" data-fallback="camera"></div><div class="cap">My favorite hostel buddy</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-16.jpg" alt="" data-fallback="star"></div><div class="cap">Happiness captured perfectly</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-17.jpg" alt="" data-fallback="heart"></div><div class="cap">Creating memories one selfie at a time</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-18.jpg" alt="" data-fallback="camera"></div><div class="cap">Happy faces, happy hearts</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-19.jpg" alt="" data-fallback="star"></div><div class="cap">The perfect trio</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/college/c-20.jpg" alt="" data-fallback="heart"></div><div class="cap">Together, we shine</div></div>
+
+      <div class="polaroid" style="--fc1:#e4e9f5;--fc2:#cdd6ec;"><div class="frame"><img src="images/college/c-21.jpg" alt="" data-fallback="camera"></div><div class="cap">The perfect duo</div></div>
+      <div class="polaroid" style="--fc1:#fbe9e2;--fc2:#f3ccbc;"><div class="frame"><img src="images/college/c-22.jpg" alt="" data-fallback="star"></div><div class="cap">Last selfie, but the memories will last forever</div></div>
+    </div>
+    <div class="page-number">04</div>
+  </div>
+</section>
+
+<!-- FRIENDSHIP -->
+<section class="page" data-chapter="friendship" data-label="Friends">
+  <div class="leaf">
+    <div class="tape l"></div><div class="tape r"></div>
+    <p class="eyebrow">page five</p>
+    <h2>Best Friends</h2>
+    <span class="sub">the ones who became family</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#92A87E" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#E8879B"/><circle cx="122" cy="8" r="2" fill="#E8879B"/></svg>
+    <div class="polaroids">
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/best-friends/b-1.jpg" alt="" data-fallback="camera"></div><div class="cap">inside jokes, still funny</div></div>
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/best-friends/b-2.jpg" alt="" data-fallback="star"></div><div class="cap">No brains, only memories</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/best-friends/b-3.jpg" alt="" data-fallback="heart"></div><div class="cap">Friendship level: unmanageable</div></div>
+
+       <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/best-friends/b-4.jpg" alt="" data-fallback="camera"></div><div class="cap">First click, forever friendship</div></div>
+      <div class="polaroid" style="--fc1:#fdeecb;--fc2:#f7deA0;"><div class="frame"><img src="images/best-friends/b-5.jpg" alt="" data-fallback="star"></div><div class="cap">Daily phone calls</div></div>
+      <div class="polaroid" style="--fc1:#e6f0e0;--fc2:#d3e4c8;"><div class="frame"><img src="images/best-friends/b-6.jpg" alt="" data-fallback="heart"></div><div class="cap">Degree unlocked, maturity still loading...</div></div>
+
+       <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/best-friends/b-7.jpg" alt="" data-fallback="camera"></div><div class="cap">College finished, but our nonsense continues</div></div>
+
+    </div>
+    <div class="page-number">05</div>
+  </div>
+</section>
+
+<!-- FAMILY -->
+<section class="page" data-chapter="family" data-label="Family">
+  <div class="leaf">
+    <div class="tape l"></div>
+    <p class="eyebrow">page six</p>
+    <h2>Family Love</h2>
+    <span class="sub">the ones behind the smile</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#C85C77" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#D4A657"/><circle cx="122" cy="8" r="2" fill="#D4A657"/></svg>
+    
+
+    <div class="feature-photo" style="--fc1:#e4e9f5;--fc2:#cdd6ec;">
+      <div class="frame"><img src="images/family/f.jpg" alt="College photo" data-fallback="school"></div>
+      <p class="cap">My biggest blessing in one frame.</p>
+    </div>
+
+    
+    <div class="polaroids" style="margin-top:44px;">
+      <div class="polaroid" style="--fc1:#fbe4d2;--fc2:#f3ceb8;"><div class="frame"><img src="images/family/f-0.jpeg" alt="" data-fallback="camera"></div><div class="cap">Same blood, same attitude</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/family/f-3.jpeg" alt="" data-fallback="heart"></div><div class="cap">Forever teammates</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/family/f-4.jpeg" alt="" data-fallback="star"></div><div class="cap">Family bonds are forever</div></div>
+      <div class="polaroid" style="--fc1:#fbe4d2;--fc2:#f3ceb8;"><div class="frame"><img src="images/family/f-5.jpeg" alt="" data-fallback="camera"></div><div class="cap">My unpaid bodyguards</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/family/f-6.jpeg" alt="" data-fallback="heart"></div><div class="cap">Same roots, different vibes</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/family/f-7.jpg" alt="" data-fallback="star"></div><div class="cap">Little smiles, big happiness</div></div>
+
+      <div class="polaroid" style="--fc1:#fbe4d2;--fc2:#f3ceb8;"><div class="frame"><img src="images/family/f-8.jpg" alt="" data-fallback="camera"></div><div class="cap">Forever connected</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/family/f-9.jpg" alt="" data-fallback="heart"></div><div class="cap">Little us, big memories</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/family/f-10.jpg" alt="" data-fallback="star"></div><div class="cap">Brother Marriage celebration</div></div>
+
+      <div class="polaroid" style="--fc1:#fbe4d2;--fc2:#f3ceb8;"><div class="frame"><img src="images/family/f-11.jpg" alt="" data-fallback="camera"></div><div class="cap">My brother, my pride</div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/family/f-12.jpg" alt="" data-fallback="heart"></div><div class="cap">Family + travel = perfect happiness</div></div>
+      <div class="polaroid" style="--fc1:#fde3ea;--fc2:#f7cad8;"><div class="frame"><img src="images/family/f-13.jpg" alt="" data-fallback="star"></div><div class="cap">Real bond, real love</div></div>
+   
+   
+      <div class="polaroid" style="--fc1:#fbe4d2;--fc2:#f3ceb8;"><div class="frame"><img src="images/family/f-14.jpg" alt="" data-fallback="camera"></div><div class="cap">My forever buddy </div></div>
+      <div class="polaroid" style="--fc1:#e9f2e1;--fc2:#cfe3ba;"><div class="frame"><img src="images/family/f-15.jpeg" alt="" data-fallback="heart"></div><div class="cap">Mom’s favorite (but we know the truth)</div></div>
 
 
-                        <p>
-                            A fully responsive 6-page school website designed for smooth user experience,
-                            optimized performance, and reliable enquiry handling.
-                        </p>
+    </div>
+    <div class="page-number">06</div>
+  </div>
+</section>
 
-                        <h6>Features</h6>
-                        <ul>
-                            <li>6-page responsive mobile-first website</li>
-                            <li>Built with HTML5, CSS3, JavaScript, Bootstrap 5 & PHP</li>
-                            <li>Server-side validated enquiry form</li>
-                            <li>Email notification system for enquiries</li>
-                            <li>Cross-browser compatible & WCAG-friendly design</li>
-                            <li>Optimized page load performance</li>
-                        </ul>
+<!-- GALLERY -->
+<section class="page" data-chapter="gallery" data-label="Gallery">
+  <div class="leaf">
+    <p class="eyebrow">page seven</p>
+    <h2>The Reel</h2>
+    <span class="sub">25 years of your memories</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#D4A657" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#92A87E"/><circle cx="122" cy="8" r="2" fill="#92A87E"/></svg>
+    <div class="filmstrip-wrap">
+      <div class="filmstrip" id="filmstrip"></div>
+    </div>
+    <div class="page-number">07</div>
+  </div>
+</section>
 
-                        <h6>Impact</h6>
-                        <p class="text-success">
-                            Ensured 100% enquiry tracking via digital system
-                        </p>
+<!-- VIDEO NOTES -->
+<section class="page" data-chapter="videos" data-label="Videos">
+  <div class="leaf">
+    <div class="tape l"></div><div class="tape r"></div>
+    <p class="eyebrow">page eight</p>
+    <h2>Video Notes</h2>
+    <span class="sub">a few voices, saved just for today</span>
+    <svg class="divider" viewBox="0 0 130 16" fill="none"><path d="M2 8 Q20 -2 40 8 T78 8 T116 8" stroke="#C85C77" stroke-width="1.3"/><circle cx="8" cy="8" r="2" fill="#D4A657"/><circle cx="122" cy="8" r="2" fill="#D4A657"/></svg>
+    <div class="video-grid">
+      <div class="video-card"><video controls poster="images/vidhya-img.jfif"><source src="videos/vidhya.mp4" type="video/mp4"></video><p class="cap">from your school friend</p></div>
+      <div class="video-card"><video controls poster="images/video-friend-poster.jpg"><source src="videos/best-friend-note.mp4" type="video/mp4"></video><p class="cap">from your best friend</p></div>
+      <div class="video-card"><video controls poster="images/video-college-poster.jpg"><source src="videos/college-friends-note.mp4" type="video/mp4"></video><p class="cap">from the college gang</p></div>
+    </div>
+    <div class="page-number">08</div>
+  </div>
+</section>
 
+<!-- FINALE -->
+<section class="page finale" data-chapter="final" data-label="Finale">
+  <div class="leaf">
+    <p class="eyebrow" style="justify-content:center;">the last page</p>
+    <div class="cake" aria-hidden="true">
+      <div class="cake-candle"></div><div class="cake-flame"></div>
+      <div class="cake-top"></div><div class="cake-mid"></div><div class="cake-base"></div>
+    </div>
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope" onclick="openEnvelope()">
+        <div class="env-body"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">❤</div>
+      </div>
+    </div>
+    <p class="hint">tap the envelope</p>
+  </div>
+</section>
 
-                    </div>
+<!-- ============ MODAL ============ -->
+<div class="modal-overlay" id="letterModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeModal()">✕</button>
+    <div class="letter-content">
+      <p>🎂 Happy Birthday, Swetha!</p>
+      <p>I think this might be your last birthday at your home before you get married and move to a new family. So, on this special day, spend beautiful moments with your family, be happy, and enjoy every little moment with them.</p>
+      <p>I have a small piece of advice for you — try not to get angry too often. Everyone around you always wishes the best for you and says things only for your good.</p>
+      <p>And remember, your friend will always be there to support you in every situation. No matter what happens, you can always count on me.</p>
+      <p class="signoff">Finally, wishing you a very happy birthday! ❤️</p>
+    </div>
+  </div>
+</div>
 
-                </div>
-            </div>
-        </div>
+<script>
+  (function(){
+    const titleEl = document.querySelector(".cover h1");
+    if(titleEl){
+      const text = titleEl.textContent;
+      titleEl.innerHTML = "";
+      [...text].forEach((ch,i)=>{
+        const span = document.createElement("span");
+        span.className = "ch";
+        span.textContent = ch === " " ? "\u00A0" : ch;
+        span.style.animationDelay = (0.15 + i*0.07) + "s";
+        titleEl.appendChild(span);
+      });
+    }
 
-        <!-- ================= MODAL 3 ================= -->
-        <div class="modal fade" id="project3Modal" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3">
-
-                    <div class="modal-header border-0">
-                        <h5 class="fw-bold">Dialmia Business Directory</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
-
-                        <p>
-                            A scalable admin dashboard for managing large-scale business listings across multiple
-                            cities.
-                            Focused on structured data management, accuracy, and SEO optimization.
-                        </p>
-
-
-                        <h6>Features</h6>
-                        <ul>
-                            <li>Admin management of 500+ business listings</li>
-                            <li>Structured data handling (category, city, contact info)</li>
-                            <li>Multi-city organization (15+ cities)</li>
-                            <li>Reduced mis-categorization by ~30%</li>
-                            <li>SEO-optimized listing updates</li>
-                        </ul>
-
-                        <h6>Impact</h6>
-                        <p class="text-success">
-                            Improved data accuracy and directory navigation efficiency
-                        </p>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= MODAL 4 ================= -->
-        <div class="modal fade" id="project4Modal" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content p-3">
-
-                    <div class="modal-header border-0">
-                        <h5 class="fw-bold">Dialmia Business Directory</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <img src="images/shopkart.jpg" class="img-fluid rounded mb-3">
-
-                        <p>
-                            SEO optimization project focused on improving organic search visibility for a large-scale
-                            business directory platform through structured on-page SEO improvements.
-                        </p>
-
-
-                        <h6>Features</h6>
-                        <ul>
-                            <li>Keyword research for 20+ categories and city-based searches</li>
-                            <li>Optimized 500+ pages (titles, meta descriptions, Keyowrds, URLs)</li>
-                            <li>Improved site crawlability and search index performance</li>
-                            <li>Created standardized SEO content templates</li>
-                        </ul>
-
-                        <h6>Impact</h6>
-                        <p class="text-success">
-                            Improved overall search visibility and consistency across large-scale directory pages.
-                        </p>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Education + Certifications -->
-        <section id="education" class="creative-section py-5">
-            <div class="container py-4">
-                <div class="row g-5">
-                    <div class="col-md-6" data-aos="fade-up">
-                        <h2 class="section-title-creative">Education</h2>
-                        <div class="art-card p-4 mb-3">
-                            <i class="bi bi-mortarboard-fill fs-2" style="color: #d4a373;"></i>
-                            <h4 class="mt-2">Bachelor of Engineering in Computer Science</h4>
-                            <p class="text-muted">Anna University, Chennai · 2020-2024</p>
-                            <p>CGPA: 8.5/10. Coursework: Web Development, Database Systems, OOP, Data Structures.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="section-title-creative">Certifications</h2>
-                        <div class="art-card d-flex align-items-center gap-3 p-3 mb-2">
-                            <i class="bi bi-code-square fs-2" style="color: #d4a373;"></i>
-                            <div><strong>React - The Complete Guide</strong>
-                                <div class="text-muted small">Udemy · 2024</div>
-                            </div>
-                        </div>
-                        <div class="art-card d-flex align-items-center gap-3 p-3 mb-2">
-                            <i class="bi bi-java fs-2" style="color: #d4a373;"></i>
-                            <div><strong>Java Programming Masterclass</strong>
-                                <div class="text-muted small">Coursera · 2023</div>
-                            </div>
-                        </div>
-                        <div class="art-card d-flex align-items-center gap-3 p-3">
-                            <i class="bi bi-bootstrap fs-2" style="color: #d4a373;"></i>
-                            <div><strong>Bootstrap 5 Certification</strong>
-                                <div class="text-muted small">freeCodeCamp · 2024</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="creative-section py-5">
-            <div class="container py-5">
-                <div class="contact-glass p-5 text-center" data-aos="zoom-in">
-                    <i class="bi bi-envelope-paper-heart fs-1" style="color: #d4a373;"></i>
-                    <h2 class="display-5 fw-semibold mt-3">Ready to contribute.</h2>
-                    <p class="mx-auto" style="max-width: 550px;">I'm actively seeking full-time opportunities as a Web
-                        Developer. Let's connect!</p>
-                    <div class="d-flex justify-content-center gap-5 my-4 flex-wrap">
-                        <a href="#" class="social-creative-icon"><i class="bi bi-github"></i></a>
-                        <a href="#" class="social-creative-icon"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="social-creative-icon"><i class="bi bi-envelope-fill"></i></a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="mailto:karthikeyan.s@dev.com"
-                            class="btn btn-dark rounded-pill px-5 py-3 fs-6">karthikeyan.s@dev.com <i
-                                class="bi bi-send ms-2"></i></a>
-                        <div class="mt-3">
-                            <a href="Karthikeyan-Resume.pdf" download class="btn-outline-resume"><i
-                                    class="bi bi-download me-1"></i>Download Resume</a>
-                        </div>
-                        <p class="text-muted mt-4 small">📍 Chennai, India · Available for remote, hybrid, or relocation
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-4 text-center">
-        <div class="container">
-            <p class="mb-0 small opacity-75">© 2026 Karthikeyan S — Web Developer. Available for new opportunities.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true, offset: 30 });
-
-        // Custom cursor
-        const cursor = document.querySelector('.custom-cursor');
-        if (cursor) {
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.left = e.clientX - 4 + 'px';
-                cursor.style.top = e.clientY - 4 + 'px';
-            });
-            document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
-            document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
-        }
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('mainNav');
-            if (nav && window.scrollY > 50) nav.classList.add('scrolled');
-            else if (nav) nav.classList.remove('scrolled');
+    if(window.matchMedia("(hover:hover)").matches){
+      document.addEventListener("mousemove", (e)=>{
+        document.querySelectorAll(".tilt-target").forEach(el=>{
+          if(!el.offsetParent) return;
+          const rect = el.getBoundingClientRect();
+          const cx = rect.left + rect.width/2, cy = rect.top + rect.height/2;
+          const dx = (e.clientX - cx) / (rect.width/2);
+          const dy = (e.clientY - cy) / (rect.height/2);
+          const rx = Math.max(-1,Math.min(1,-dy)) * 8;
+          const ry = Math.max(-1,Math.min(1,dx)) * 8;
+          el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
         });
+      });
+    }
 
-        // Mobile menu overlay
-        const toggler = document.querySelector('.navbar-toggler');
-        const collapse = document.getElementById('navCreative');
-        const overlay = document.getElementById('menuOverlay');
+    const flourishSVG = `<svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 42 C4 20 20 4 42 4" stroke="#92A87E" stroke-width="1.3"/>
+      <path d="M4 42 C4 28 12 18 24 15" stroke="#D4A657" stroke-width="1.1"/>
+      <circle cx="4" cy="42" r="2.4" fill="#C85C77"/>
+    </svg>`;
+    document.querySelectorAll(".leaf").forEach(leaf=>{
+      const tl = document.createElement("div"); tl.className = "corner-flourish tl"; tl.innerHTML = flourishSVG;
+      const br = document.createElement("div"); br.className = "corner-flourish br"; br.innerHTML = flourishSVG;
+      leaf.appendChild(tl); leaf.appendChild(br);
+    });
 
-        if (toggler && collapse && overlay) {
-            toggler.addEventListener('click', () => {
-                setTimeout(() => {
-                    if (collapse.classList.contains('show')) {
-                        overlay.classList.add('active');
-                        document.body.classList.add('menu-open');
-                    } else {
-                        overlay.classList.remove('active');
-                        document.body.classList.remove('menu-open');
-                    }
-                }, 10);
-            });
+    const fill = document.getElementById("progressFill");
+    function updateProgress(){
+      const doc = document.documentElement;
+      const pct = doc.scrollTop / ((doc.scrollHeight - doc.clientHeight) || 1) * 100;
+      fill.style.width = pct + "%";
+    }
+    window.addEventListener("scroll", updateProgress, { passive:true });
+    updateProgress();
 
-            overlay.addEventListener('click', () => {
-                toggler.click();
-            });
-        }
+    if(window.matchMedia("(hover:hover)").matches){
+      const sparkSymbols = ["✦","✿","·"];
+      let lastSpark = 0;
+      window.addEventListener("mousemove", (e)=>{
+        const now = Date.now();
+        if(now - lastSpark < 90) return;
+        lastSpark = now;
+        const s = document.createElement("div");
+        s.className = "cursor-spark";
+        s.textContent = sparkSymbols[Math.floor(Math.random()*sparkSymbols.length)];
+        s.style.left = (e.clientX + (Math.random()*10-5)) + "px";
+        s.style.top = (e.clientY + (Math.random()*10-5)) + "px";
+        document.body.appendChild(s);
+        setTimeout(()=> s.remove(), 900);
+      });
+    }
+  })();
 
-        // Close menu when clicking a nav link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 992 && collapse && collapse.classList.contains('show')) {
-                    toggler.click();
-                }
-            });
-        });
+  /* ============ Config ============ */
+  const musicFolder = "music/";
+  const MAIN_SONG = "song.mp3";
+  const BIRTHDAY_SONG = "birthday.mp3";
+  const galleryCount = 12;
 
-        // Smooth scroll for all anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            const href = anchor.getAttribute('href');
-            if (href && href !== '#' && href.length > 1) {
-                anchor.addEventListener('click', function (e) {
-                    const targetId = href.slice(1);
-                    const target = document.getElementById(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            }
-        });
-    </script>
+  const icons = {
+    camera: `<svg class="ph-illustration" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="18" width="52" height="34" rx="5"/><circle cx="32" cy="35" r="11"/><circle cx="32" cy="35" r="4.5" fill="currentColor" stroke="none"/><rect x="22" y="10" width="20" height="8" rx="2"/></svg>`,
+    heart:  `<svg class="ph-illustration" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M32 54 C10 40 4 26 14 17 C21 11 30 14 32 22 C34 14 43 11 50 17 C60 26 54 40 32 54 Z"/></svg>`,
+    star:   `<svg class="ph-illustration" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M32 8 L38 26 L57 26 L42 38 L47 56 L32 45 L17 56 L22 38 L7 26 L26 26 Z"/></svg>`,
+    baby:   `<svg class="ph-illustration" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="32" cy="26" r="14"/><path d="M14 52 C14 40 22 34 32 34 C42 34 50 40 50 52" /><path d="M24 24 Q32 30 40 24"/></svg>`,
+    school: `<svg class="ph-illustration" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M32 10 L58 22 L32 34 L6 22 Z"/><path d="M18 27 V42 C18 46 25 50 32 50 C39 50 46 46 46 42 V27"/><path d="M58 22 V38"/></svg>`
+  };
+  function fallbackIllustration(kind, label){
+    const icon = icons[kind] || icons.camera;
+    return `${icon}<span class="ph-caption">${label || 'add photo'}</span>`;
+  }
+  function wireImageFallbacks(){
+    document.querySelectorAll('img[data-fallback]').forEach(img=>{
+      img.addEventListener('error', ()=>{
+        const kind = img.dataset.fallback;
+        img.parentElement.innerHTML = fallbackIllustration(kind, 'add photo');
+      }, { once:true });
+    });
+  }
+  wireImageFallbacks();
+
+  const heartField = document.getElementById("heartField");
+  const heartColors = ["#E8879B","#D4A657","#92A87E","#C85C77"];
+  const heartSymbols = ["❤","✿","✦"];
+  for(let i=0;i<18;i++){
+    const h = document.createElement("div");
+    h.className = "floating-heart";
+    h.textContent = heartSymbols[i % heartSymbols.length];
+    h.style.left = (Math.random()*94 + 2) + "vw";
+    h.style.fontSize = (Math.random()*14 + 14) + "px";
+    h.style.color = heartColors[i % heartColors.length];
+    h.style.animationDuration = (Math.random()*10 + 12) + "s";
+    h.style.animationDelay = (Math.random()*14) + "s";
+    heartField.appendChild(h);
+  }
+  const bunting = document.getElementById("bunting");
+  const flagColors = ["var(--rose)","var(--gold)","var(--sage)","var(--rose-deep)"];
+  const flagCount = 26;
+  for(let i=0;i<flagCount;i++){
+    const f = document.createElement("div");
+    f.className = "flag";
+    f.style.left = (i*(100/flagCount)) + "%";
+    f.style.background = flagColors[i % flagColors.length];
+    f.style.animationDelay = (i*0.12) + "s";
+    bunting.appendChild(f);
+  }
+
+  /* ============ Music ============ */
+  const music = document.getElementById("bgMusic");
+  const player = document.getElementById("player");
+  const musicToggleBtn = document.getElementById("musicToggleBtn");
+
+  function playMainSong(){
+    if(!music.src.endsWith(MAIN_SONG)) music.src = musicFolder + MAIN_SONG;
+    music.muted = false;
+    music.volume = 0.5;
+    music.play().then(()=>{ player.classList.add("playing"); }).catch(()=>{});
+  }
+
+  function playBirthdaySong(){
+    if(!music.src.endsWith(BIRTHDAY_SONG)) music.src = musicFolder + BIRTHDAY_SONG;
+    music.muted = false;
+    music.volume = 0.55;
+    music.play().then(()=>{ player.classList.add("playing"); }).catch(()=>{});
+  }
+
+  function toggleMainSong(){
+    if(music.paused){
+      if(!music.src) music.src = musicFolder + MAIN_SONG;
+      music.play().then(()=>{ player.classList.add("playing"); }).catch(()=>{});
+    } else {
+      music.pause();
+      player.classList.remove("playing");
+    }
+  }
+
+  /* ============ Intro sequence, gated behind a real tap ============ */
+  const introOverlay = document.getElementById('introOverlay');
+  const tapStart = document.getElementById('tapStart');
+  const introStage1 = document.getElementById('introStage1');
+  const introStage2 = document.getElementById('introStage2');
+  const celebrateStage = document.getElementById('celebrateStage');
+  const ageCounter = document.getElementById('ageCounter');
+  const ageCardWrap = document.querySelector('.age-card-wrap');
+  const cakeCutStage = document.getElementById('cakeCutStage');
+
+  (function seedIntroParticles(){
+    const syms = ["✦","✿","·","❤"];
+    for(let i=0;i<10;i++){
+      const p = document.createElement("div");
+      p.className = "intro-particle";
+      p.textContent = syms[i % syms.length];
+      p.style.left = (Math.random()*90 + 5) + "%";
+      p.style.bottom = "-10%";
+      p.style.fontSize = (Math.random()*10 + 10) + "px";
+      p.style.animationDuration = (Math.random()*6 + 7) + "s";
+      p.style.animationDelay = (Math.random()*6) + "s";
+      introOverlay.appendChild(p);
+    }
+  })();
+
+  function sparkleBurst(container, count){
+    for(let i=0;i<count;i++){
+      const s = document.createElement("div");
+      s.className = "age-sparkle";
+      const angle = Math.random()*Math.PI*2;
+      const dist = 40 + Math.random()*40;
+      s.style.setProperty('--sx', (Math.cos(angle)*dist) + 'px');
+      s.style.setProperty('--sy', (Math.sin(angle)*dist - 20) + 'px');
+      s.style.left = "50%"; s.style.top = "50%";
+      s.style.animationDelay = (Math.random()*0.15) + "s";
+      container.appendChild(s);
+      setTimeout(()=> s.remove(), 1100);
+    }
+  }
+
+  function crossfadeStage(fromEl, toEl, gap){
+    fromEl.classList.remove('stage-in');
+    fromEl.classList.add('stage-out');
+    setTimeout(()=>{
+      fromEl.style.display = 'none';
+      toEl.style.display = 'flex';
+      requestAnimationFrame(()=>{
+        toEl.classList.remove('stage-pending');
+        toEl.classList.add('stage-in');
+      });
+    }, gap || 500);
+  }
+
+  function fillCelebrationStage(){
+    const balloonColors = ["#E8879B","#D4A657","#92A87E","#C85C77"];
+    for(let i=0;i<7;i++){
+      const b = document.createElement("div");
+      b.className = "celeb-balloon";
+      b.style.left = (8 + i*13 + Math.random()*6) + "%";
+      b.style.background = balloonColors[i % balloonColors.length];
+      b.style.animationDuration = (2.6 + Math.random()*1.2) + "s";
+      b.style.animationDelay = (Math.random()*0.6) + "s";
+      celebrateStage.appendChild(b);
+    }
+    const confColors = ["#FF5D8F","#FFC93C","#4DB6AC","#5B8DEF","#C780FA"];
+    for(let i=0;i<18;i++){
+      const c = document.createElement("div");
+      c.className = "celeb-confetti";
+      c.textContent = "●";
+      c.style.left = (Math.random()*94 + 3) + "%";
+      c.style.color = confColors[i % confColors.length];
+      c.style.fontSize = (Math.random()*6 + 6) + "px";
+      c.style.animationDuration = (1.6 + Math.random()*1.2) + "s";
+      c.style.animationDelay = (Math.random()*0.8) + "s";
+      celebrateStage.appendChild(c);
+    }
+  }
+
+  function runIntro(){
+    // flip the age from 24 to 25, and the moment it finishes flipping, the
+    // birthday song takes over — this fires before the cake screen ever appears
+    setTimeout(()=>{
+      ageCounter.classList.add('flip');
+      sparkleBurst(ageCardWrap, 8);
+      setTimeout(()=>{
+        ageCounter.textContent = '25';
+        playBirthdaySong(); // starts right as the number lands on 25
+      }, 320);
+      setTimeout(()=>{ ageCounter.classList.remove('flip'); }, 660);
+    }, 1000);
+
+    // cross-fade into the happy-birthday + cake stage afterwards
+    setTimeout(()=>{
+      fillCelebrationStage();
+      crossfadeStage(introStage1, introStage2, 500);
+    }, 2500);
+  }
+
+  // the tap-to-begin gate: this single real tap is what browsers require
+  // before any audio can be audible — everything else afterwards (including
+  // the automatic birthday-song trigger at the age flip) is unlocked by it
+  tapStart.addEventListener('click', ()=>{
+    tapStart.classList.add('hide');
+    setTimeout(()=> tapStart.remove(), 500);
+    music.muted = false;
+    runIntro();
+  }, { once:true });
+
+  function crumbBurst(originEl){
+    const rect = originEl.getBoundingClientRect();
+    const colors = ["#f3ceb8","#e8c39a","#fff5e6","#d9a441"];
+    for(let i=0;i<24;i++){
+      const c = document.createElement("div");
+      c.style.position = "fixed";
+      c.style.left = (rect.left + rect.width/2) + "px";
+      c.style.top = (rect.top + rect.height*0.55) + "px";
+      c.style.width = c.style.height = (Math.random()*5+3) + "px";
+      c.style.borderRadius = "50%";
+      c.style.background = colors[Math.floor(Math.random()*colors.length)];
+      c.style.zIndex = 100000; c.style.pointerEvents = "none";
+      document.body.appendChild(c);
+      const dx = (Math.random()*140-70), dy = (Math.random()*-90-20);
+      const anim = c.animate([
+        { transform:"translate(0,0)", opacity:1 },
+        { transform:`translate(${dx}px, ${dy}px)`, opacity:1, offset:.5 },
+        { transform:`translate(${dx*1.3}px, ${dy*-1+70}px)`, opacity:0 }
+      ], { duration: 900+Math.random()*400, easing:"cubic-bezier(.3,.6,.4,1)" });
+      anim.onfinish = ()=> c.remove();
+    }
+  }
+
+  let cakeCut = false;
+  function performCakeCut(){
+    if(cakeCut) return;
+    cakeCut = true;
+    cakeCutStage.classList.add('cut');
+    crumbBurst(cakeCutStage);
+    confettiBurst();
+    // birthday song is already playing since the age flip — nothing to trigger here
+    setTimeout(()=>{
+      introOverlay.classList.add('hide');
+      document.body.classList.remove('intro-active');
+      setTimeout(()=>{
+        introOverlay.remove();
+        playMainSong(); // original page is now showing — hand off to the main song
+      }, 950);
+    }, 900);
+  }
+  cakeCutStage.addEventListener('click', performCakeCut);
+
+  let swipeStartX = null, swipeStartY = null;
+  cakeCutStage.addEventListener('pointerdown', (e)=>{ swipeStartX = e.clientX; swipeStartY = e.clientY; });
+  cakeCutStage.addEventListener('pointermove', (e)=>{
+    if(swipeStartX === null || cakeCut) return;
+    const dist = Math.hypot(e.clientX - swipeStartX, e.clientY - swipeStartY);
+    if(dist > 26) performCakeCut();
+  });
+  cakeCutStage.addEventListener('pointerup', ()=>{ swipeStartX = null; swipeStartY = null; });
+
+  /* ============ Book open ============ */
+  function openBook(){
+    if(music.paused) playMainSong();
+    document.getElementById("book").classList.add("opened");
+    setTimeout(()=>{ document.querySelector('[data-chapter="birth"]').scrollIntoView({behavior:"smooth"}); }, 500);
+  }
+
+  /* ============ Pinboard nav ============ */
+  const chapters = document.querySelectorAll(".page");
+  const pinboard = document.getElementById("pinboard");
+  chapters.forEach(ch=>{
+    const btn = document.createElement("button");
+    btn.className = "pin";
+    btn.dataset.label = ch.dataset.label;
+    btn.dataset.target = ch.dataset.chapter;
+    btn.onclick = ()=> ch.scrollIntoView({behavior:"smooth"});
+    pinboard.appendChild(btn);
+  });
+  const pins = document.querySelectorAll(".pin");
+
+  const leaves = document.querySelectorAll(".leaf");
+  const chapterObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const leaf = entry.target.querySelector(".leaf");
+      if(entry.isIntersecting && leaf){ leaf.classList.add("show"); }
+      if(entry.intersectionRatio >= 0.5){
+        const name = entry.target.dataset.chapter;
+        pins.forEach(p=> p.classList.toggle("active", p.dataset.target === name));
+      }
+    });
+  }, {threshold:[0, 0.15, 0.5]});
+  chapters.forEach(ch=> chapterObserver.observe(ch));
+
+  const filmstrip = document.getElementById("filmstrip");
+  const galleryTints = [["#fde3ea","#f7cad8"],["#e6f0e0","#d3e4c8"],["#fdeecb","#f7deA0"],["#e4e9f5","#cdd6ec"],["#fbe4d2","#f3ceb8"]];
+  function buildStrip(){
+    let html = "";
+    for(let i=1;i<=galleryCount;i++){
+      const tint = galleryTints[i % galleryTints.length];
+      html += `<div class="frame" style="--fc1:${tint[0]};--fc2:${tint[1]}"><img src="images/img${i}.jpg" alt="" data-fallback="${i%3===0?'star':(i%2===0?'heart':'camera')}"></div>`;
+    }
+    filmstrip.innerHTML = html + html;
+    wireImageFallbacks();
+  }
+  buildStrip();
+
+  const modal = document.getElementById('letterModal');
+  function openEnvelope(){
+    const env = document.getElementById("envelope");
+    const already = env.classList.contains("open");
+    env.classList.toggle("open");
+    if(!already){ confettiBurst(); setTimeout(()=>{ modal.classList.add('open'); }, 500); }
+    else{ modal.classList.add('open'); }
+  }
+  function closeModal(){ modal.classList.remove('open'); }
+  modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+
+  function confettiBurst(){
+    const symbols = ["❤","✿","✦","🎉","🎈"];
+    const colors = ["#FF5D8F","#FFC93C","#4DB6AC","#5B8DEF","#C780FA","#FF9F45","#7BC96F","#FF6B6B"];
+    for(let i=0;i<90;i++){
+      const el = document.createElement("div");
+      const isStreamer = Math.random() > 0.55;
+      const color = colors[Math.floor(Math.random()*colors.length)];
+      el.style.position = "fixed"; el.style.left = Math.random()*100 + "vw"; el.style.top = "-30px";
+      el.style.zIndex = 9999; el.style.pointerEvents = "none";
+      if(isStreamer){
+        el.style.width = (Math.random()*6+6) + "px"; el.style.height = (Math.random()*14+10) + "px";
+        el.style.background = color; el.style.borderRadius = "2px";
+      } else {
+        el.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+        el.style.color = color; el.style.fontSize = (Math.random()*18+14) + "px";
+      }
+      document.body.appendChild(el);
+      const drift = (Math.random()*160 - 80);
+      const anim = el.animate([
+        { transform:`translate(0,0) rotate(0deg)`, opacity:1 },
+        { transform:`translate(${drift}px,100vh) rotate(${Math.random()>0.5?720:-720}deg)`, opacity:.95 }
+      ], { duration: Math.random()*2800+2200, easing:"ease-in" });
+      anim.onfinish = ()=> el.remove();
+    }
+  }
+</script>
 </body>
-
 </html>
